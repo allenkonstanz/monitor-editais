@@ -1,0 +1,811 @@
+{
+  "ids": [
+    "7abb3e91e97670571089e7c414bba176",
+    "5d5cc623b3e6717e754242424e9161e2",
+    "fb64d133da193a863588afcea830c17e",
+    "7bf0351c104ba1735cb9fc5630618963",
+    "766a6905658f682adc8f0e969d8bfb83",
+    "6ed85612621cfe4a52b7c672fdf84f21",
+    "22745989af4a21485e35940ee4e5f61e",
+    "f651544ad980a3ca804140d119db868e",
+    "1f5459d00f328923329e5862cc222d24",
+    "a3844888f6b71ba437fea55c96665cde",
+    "65ae77f78ada46da04c67d7ea82f2b53",
+    "aefd80690e9c2b80be082fe2674b8810",
+    "05c687c26e0c021d3d063c0ef42efae5",
+    "3beb342d15793dd1a8835a1a18f1496e",
+    "79a786cd63e27e437ec65c2e6991c641",
+    "5dca3c6d00b4c61a40a4b507d103a672",
+    "25d3d9d920cdc8527c5376721edee1cb",
+    "290b62ca18d83ff8d8447d81dce4ccab",
+    "cd713a0e83a7b42980fb20a83cb61dad",
+    "4bc21a544c3b68e154da3157f5f49b08",
+    "5433073110c8ce3665196a946650cd68",
+    "a3e19e10d5e74f8def985e2999a94d2b",
+    "cd34705b54d936510bb6ab517944e2e6",
+    "af82e9fc8aaee996b924e5fd271a98c4",
+    "b75df1fe3a41fd58ebeb452e0d237d6b",
+    "5355fdd6d8b79eb3bf44a844a56c6ba8",
+    "64faacc6abfb50d9f447e9697396458d",
+    "c4937dedad6012612c8af186409bb644",
+    "e0a5a49a268eee177d729406301e10a4",
+    "e8dc81a1f249fd1ae6397d10ed74697c",
+    "f16df94b57289cdf093de2c0686645ed",
+    "669e36f66d83ce54e57ec70935729f42",
+    "ac23961c44eb8cebf565959b3df05d86",
+    "180509a9db876d9b9ffcacae138fb8b0",
+    "0d24c1e74621b1fdc35f409c6d667693",
+    "8cc18fe73842bed38d89a5c41b7b35ab",
+    "fd1cf0bc10353fdf1a29b3dcb03ae6d1",
+    "1bd69f81cac5595b56ef4228268a28b1",
+    "305133c4fdb16c998f6cce0cb77365f9",
+    "014a1bf30c08ca45dc088bc5677c92a9",
+    "af48f311bfe4837d477c32a01ece4029",
+    "3df7e582fd91a6b743f68ad74b99211f",
+    "622c71d8227a0721e1097bf822135ce4",
+    "a63a14b09000ca2a9126bca8b1edcf39",
+    "52ffe77bddcb8f96c487a05b8bb27eee",
+    "43c8bdd56529a4535b6b1cba57a061e1",
+    "2cdcec9f9aa4fd4d35f5a3dfb44de5a2",
+    "3c2534ce039f4b0b36727078bcfc0f32",
+    "679262f6264a030a1f9d7499c1460418",
+    "456916b2a41844c301bf01db140917a1",
+    "28532f5d3d8b01eb751e7c9a2799eb80",
+    "5fd5892d37c5f7deacd154b1c4875e27",
+    "62ff4de273776325396a50ff8b05239c",
+    "a2fe0104cdd6c0b890249b0b8c405b14",
+    "326e2eb86579754a0ef614bbfcffad7c",
+    "9e8f0fea54623c13fa22c5a58c34c02f",
+    "74ac27f2b835decaf38dd7bcef150091",
+    "50cd5381b9a9c28ce9539ec4597d8f49",
+    "67d9b6268561dcce3766ede9c9bbcd4a",
+    "f97dc6c60057cee6aa2f6d634fd43c03",
+    "7d1617fc0b2109ba984ed9d5f2998196",
+    "5f64865fd865bb1062d8e041e92f1492",
+    "d1dc71d348bced2c690ed53c68975486",
+    "eb0852286105df39d5e7baa05689e0f9",
+    "b93ae91f6c7d51ffff3f6c999e9e4e14",
+    "806be0cb89f4c7eb5ebb0c8dfa9e2008",
+    "88d3b353051bea1f1a4f8125fc10f987",
+    "903d961a994d1b47a4f361294ba6c4d9",
+    "86d003088daadc0a7fe0200796f1d81c",
+    "83edfad584db788e4093d21f3c4fd1b5",
+    "2e5fce916e240ac8d03ee1d597c9435b",
+    "a98b83f7dae7ae6dda4233b1b2e7ebf4",
+    "905e0b01647b2b2602617ccad96e77f1",
+    "bf940c570229d940edbe50abd2ae6000",
+    "4940dd844eade21c2297a5377fc14fb6",
+    "73123e9927704f82b0597b985ab4a3af",
+    "bb3a7db92bd6f52e8dc8348fe297721b",
+    "d1566c87ddc097c1b0336eaf5f941f45",
+    "7a845bb9a8c6f019e12e077d2723a739",
+    "85ad941d9ec27254e7777c6b94086e8c",
+    "736b445498362b0cdcf53771ea8c0e27",
+    "474d8b48028575b72dbc1b6c63446817",
+    "a35f51175a02f92054d5ab549ead8f28",
+    "ccfedc52a6bedb56e3f7e108a1d1ceee",
+    "05aded6720c242aebb65f29d3993c1ba"
+  ],
+  "editais": [
+    {
+      "titulo": "Programa de Bolsas de Iniciação Científica",
+      "link": "https://fapac.ac.gov.br/programa-de-bolsas-de-iniciacao-cientifica/",
+      "fonte": "FAPAC",
+      "estado": "Acre",
+      "resumo": "Programa de Bolsas de Iniciação Científica | Fundação de Amparo á Pesquisa do Estado do AcrE Programa de Bolsas de Iniciação Científica – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to content Premium Addons Modal Box Title × Modal Box Content...",
+      "id": "79a786cd63e27e437ec65c2e6991c641",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "PPSUS – Programa de Pesquisa para o SUS",
+      "link": "https://fapac.ac.gov.br/ppsus-programa-de-pesquisa-para-o-sus/",
+      "fonte": "FAPAC",
+      "estado": "Acre",
+      "resumo": "PPSUS – Programa de Pesquisa para o SUS | Fundação de Amparo á Pesquisa do Estado do AcrE PPSUS – Programa de Pesquisa para o SUS – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to...",
+      "id": "cd713a0e83a7b42980fb20a83cb61dad",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "PEIEX – Programa de Qualificação para Exportação no Acre",
+      "link": "https://fapac.ac.gov.br/peiex-programa-de-qualificacao-para-exportacao-no-acre/",
+      "fonte": "FAPAC",
+      "estado": "Acre",
+      "resumo": "PEIEX – Programa de Qualificação para Exportação no Acre | Fundação de Amparo á Pesquisa do Estado do AcrE PEIEX – Programa de Qualificação para Exportação no Acre – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to...",
+      "id": "8cc18fe73842bed38d89a5c41b7b35ab",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "Programa Primeiros Projetos (PPP)",
+      "link": "https://fapac.ac.gov.br/topico-5/",
+      "fonte": "FAPAC",
+      "estado": "Acre",
+      "resumo": "Programa Primeiros Projetos (PPP) | Fundação de Amparo á Pesquisa do Estado do AcrE Programa Primeiros Projetos (PPP) – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to...",
+      "id": "3beb342d15793dd1a8835a1a18f1496e",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "Programas e Ações",
+      "link": "https://www.fapeal.br/pesquisador/programas/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "28532f5d3d8b01eb751e7c9a2799eb80",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "Programação de Férias",
+      "link": "https://www.fapeal.br/programacaoferias/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "5dca3c6d00b4c61a40a4b507d103a672",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "Declaração de bolsa",
+      "link": "http://faplan2017.fapeal.br/demonstrativo_bolsa/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "Gerência Executiva de Tecnologia da Informação - GETI 2026 © Fundação de Amparo à Pesquisa do Estado de Alagoas. Gerência Executiva de Tecnologia da Informação - GETI 2026 © Fundação de Amparo à Pesquisa do Estado de Alagoas.",
+      "id": "af82e9fc8aaee996b924e5fd271a98c4",
+      "detectado_em": "29/07/2026 01:33"
+    },
+    {
+      "titulo": "Bolsas para doutorandos na Alemanha DAAD/Confap",
+      "link": "https://www.fapeal.br/2026/06/bolsas-doutorado-alemanha/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "5433073110c8ce3665196a946650cd68",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "CHAMADAS SIMBORA – Inscrições para novas turmas Centelha 3 AL",
+      "link": "https://www.fapeal.br/2026/06/confira-as-novas-turmas/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "fd1cf0bc10353fdf1a29b3dcb03ae6d1",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Edital Fapeal – nº 05/2026 Programa de Bolsas de Iniciação Científica Júnior – Pibic Jr Alagoas",
+      "link": "https://www.fapeal.br/2026/06/pibic-jr-2026/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "b93ae91f6c7d51ffff3f6c999e9e4e14",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Edital 01/2026 Edufal/Fapeal – Edital para Publicação de Teses e Dissertações",
+      "link": "https://www.fapeal.br/2026/06/edital-publicar-teses-dissertacoes/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "c4937dedad6012612c8af186409bb644",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Edital Nº 06/2026 –  Programa Nacional de Apoio à Geração de Empreendimentos Inovadores  Programa Centelha 3 Alagoas – Fapeal/Secti-AL/Sebrae-AL",
+      "link": "https://www.fapeal.br/2026/06/edital-centelha-3-al/",
+      "fonte": "FAPEAL",
+      "estado": "Alagoas",
+      "resumo": "FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...",
+      "id": "a35f51175a02f92054d5ab549ead8f28",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA/UEMA nº 19/2026",
+      "link": "https://www.fapema.br/edital-fapema-uema-no-19-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "474d8b48028575b72dbc1b6c63446817",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA Nº 18/2026",
+      "link": "https://www.fapema.br/edital-fapema-no-18-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "f651544ad980a3ca804140d119db868e",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA/EMAP nº 17/2026",
+      "link": "https://www.fapema.br/edital-fapema-emap-no-17-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "7abb3e91e97670571089e7c414bba176",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA/EMAP nº 16/2026",
+      "link": "https://www.fapema.br/edital-fapema-emap-no-16-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "180509a9db876d9b9ffcacae138fb8b0",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA/SAF n° 15/2026",
+      "link": "https://www.fapema.br/edital-fapema-saf-n-15-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "5d5cc623b3e6717e754242424e9161e2",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Edital FAPEMA/FMRB n° 14/2026",
+      "link": "https://www.fapema.br/edital-fapema-fmrb-n-14-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "3c2534ce039f4b0b36727078bcfc0f32",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA nº 13/2026",
+      "link": "https://www.fapema.br/edital-fapema-no-13-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "aefd80690e9c2b80be082fe2674b8810",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Edital FAPEMA nº 12/2026",
+      "link": "https://www.fapema.br/edital-fapema-no-12-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "7a845bb9a8c6f019e12e077d2723a739",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "EDITAL FAPEMA nº 11/2026",
+      "link": "https://www.fapema.br/edital-fapema-no-11-2026/",
+      "fonte": "FAPEMA",
+      "estado": "Maranhão",
+      "resumo": "https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...",
+      "id": "806be0cb89f4c7eb5ebb0c8dfa9e2008",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Bolsas de Formação CAPES",
+      "link": "https://fapesq.rpp.br/programas/bolsas-de-formacao-capes",
+      "fonte": "FAPESQ",
+      "estado": "Paraíba",
+      "resumo": "Ir para o conteúdo Navegar para Esquerda Navegar para direita Administração Administração\n                Penitenciária Agricultura\n                Familiar e Desenvolvimento do Semiárido Casa Civil do\n                Governador Casa Militar\n                do Governador Ciência, Tecnologia, Inovação e Ensino Superior Comunicação\n                Institucional Controladoria Geral do Estado Cultura...",
+      "id": "669e36f66d83ce54e57ec70935729f42",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital Inovação Aberta para Desafios Digitais (nº 23/2026)",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/2026.07.01-Desafios-Digitais-1.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1369 0 R/ViewerPreferences 1370 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x�� Ms����\u0019�\u0007 Ɏ a��I&3�-��4�\u001b+�!�\u0016!� �T�J�����C�F� 2�LOi/=u���b�d-�\u0003\u0005\u0012�طo��\u0007�����by�O>���x�_��+WɷGg��? ���...",
+      "id": "456916b2a41844c301bf01db140917a1",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital Global.PE: Espanha (nº 22/2026) atualizado em 17.07.2026",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/2026.07.15-Global-PE-Espanha-Ajustado.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1211 0 R/ViewerPreferences 1212 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��<�r丕����ɑ�(\u0012�I���\u0011�[�^j��C�\u000fYJJN�2SŤ\u0014m��f�>t�#���O�\u0016�\u00043 �T\u0002{F\u0007%\u0017,\u000fo\u000f\u000f ��...",
+      "id": "cd34705b54d936510bb6ab517944e2e6",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "• Errata: Ajustes sobre o Edital Facepe nº 22/2026 – Global.PE: Espanha",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/Errata-15_07_2026.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.4 %���� 1 0 obj <> endobj 3 0 obj <> endobj 11 0 obj <> endobj 13 0 obj <> stream x����J�`\u0014��Ԃ(��\u000e 28�h��mRpi#\u0016�V!�S�� �IHS�\u0002tspu+.ހ�e(\b\u000e��%���| �:t����� �� � @V�� G�zM��<���$*�xÐ�!��K�����c��\u0019z�\u0007\u0010G��\u0002� ��\u0012>\u0013�&|)�4\u000ec�Ƃ��� � �ٛbw��0\u0012�o�Π?�һY���M�\u0002֩\u0013\u0010УO� > stream x��� p\\�}����H��H� rfl�\u0010\u0018��}_}���c@�T[�eK�%�\u0012��vkוJ����Mv��\\�}��~�$�\u0019�q���-W\"ْi��v�����\u0014+�L� �\u0006H\u000e\b�3��C9 9��� \u000f�ֽ �...",
+      "id": "5f64865fd865bb1062d8e041e92f1492",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital Programa de Apoio à Fixação de Doutores no Brasil – Conhecimento Brasil (Profix-CB – edital nº 20/2026)",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/06/PROFIX_20_2026.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1280 0 R/ViewerPreferences 1281 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��\\Ko��\u0011� �����P�f7�L�\u0005���U�� IA\u0016��@i(i\u0016��x �&?-��9�ol�\u0007\u0003 �\u0014䲧TU?ș!�\u001a �\u0004�=&�Q]����\u0007����:�Zx/_ .\u0016��m>�>...",
+      "id": "679262f6264a030a1f9d7499c1460418",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital de Apoio aos Espaços de Criatividade, Inovação e Aprendizagem  Espaços CRIA – nº 19/2026",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/06/2026.06.07-Espaços-CRIA-1.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1669 0 R/ViewerPreferences 1670 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x�� Msܶ��\u0019�\u0007 w;\u0012E�\u0004 v2��嵻��qm5����ZK)�zwe�J����C��[ 2�LNi.=\u0015�\u0001\u0004A\u0012XI\u0011( �%�� �7xxTm\u0017g��m��g�G�����r �9 FC Bh...",
+      "id": "fb64d133da193a863588afcea830c17e",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital Facepe nº 18/2026 – Apoio à Popularização da Ciência na Semana Nacional de Ciência e Tecnologia",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/06/Edital_FACEPE_SNCT-2026.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 554 0 R/ViewerPreferences 555 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��\u001bMo���.@�a�d��8��W\u0011\u0018�e9�\u0011[j��@� VZZ^û+sW�۟�S�9\u0015�@E�...",
+      "id": "0d24c1e74621b1fdc35f409c6d667693",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital nº 17/2026 Compet Médio-Tec: Habilidades de Futuro para o Ensino Médio e Técnico",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/05/2026.05.27-Compet-Médio.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1276 0 R/ViewerPreferences 1277 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/Annots[ 23 0 R] /MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��=Ms�Ʊ�����#�\u0012!�\u00170x�r�~h ���}^����@��L�(������ �_������S^.���{f���h��...",
+      "id": "05c687c26e0c021d3d063c0ef42efae5",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Edital 16/2026 – Mães Cientistas de Pernambuco",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/05/Edital-FACEPE-16-2026-APQ-Mães-Cientistas-Pernambucanas_FINAL.docx-1.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.4 %���� 1 0 obj < /Producer (Skia/PDF m150 Google Docs Renderer)>> endobj 3 0 obj <> endobj 4 0 obj <> endobj 9 0 obj <> stream x����J�`\u0014��Ԃ(��\u000e 28�h��mRpi#\u0016�V!�S�� �IHS�\u0002tspu+.ހ�e(\b\u000e��%���| �:t����� �� � @V�� G�zM��<���$*�xÐ�!��K�����c��\u0019z�\u0007\u0010G��\u0002� ��\u0012>\u0013�&|)�4\u000ec�Ƃ��� � �ٛbw��0\u0012�o�Π?�һY���M�\u0002֩\u0013\u0010УO� > stream �����\u0010JFIF�\u0001\u0002��\u0001�\u0001�����C�\b\u0006\u0006\u0007\u0006\u0005\b\u0007\u0007\u0007 \b \u0014 \u0019\u0012\u0013\u000f\u0014 \u001a \u001a $.' \",# (7),01444 '9=82<.342���C\u0001...",
+      "id": "903d961a994d1b47a4f361294ba6c4d9",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "• ERRATA Nº 01/2026 AO EDITAL FACEPE Nº 16/2026 – Mães Cientistas de Pernambuco",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/06/Errata_Edital_Maes.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.4 %���� 1 0 obj < /Producer (Skia/PDF m151 Google Docs Renderer)>> endobj 3 0 obj <> endobj 10 0 obj <> stream x����J�`\u0014��Ԃ(��\u000e 28�h��mRpi#\u0016�V!�S�� �IHS�\u0002tspu+.ހ�e(\b\u000e��%���| �:t����� �� � @V�� G�zM��<���$*�xÐ�!��K�����c��\u0019z�\u0007\u0010G��\u0002� ��\u0012>\u0013�&|)�4\u000ec�Ƃ��� � �ٛbw��0\u0012�o�Π?�һY���M�\u0002֩\u0013\u0010УO� > stream x��� p\\�}����H��H� rfl�\u0010\u0018��}_}���c@�T[�eK�%�\u0012��vkוJ����Mv��\\�}��~�$�\u0019�q���-W\"ْi��v�����\u0014+�L�...",
+      "id": "2e5fce916e240ac8d03ee1d597c9435b",
+      "detectado_em": "29/07/2026 01:34"
+    },
+    {
+      "titulo": "Lançamento Edital Facepe/Fapesp Tecnologias Quânticas e Transição Energética (nº 15/2026)",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/Edital-15-2026-FACEPE-FAPESP-Final-1.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.5 %���� 844 0 obj <> endobj 862 0 obj <>/Filter/FlateDecode/ID[ ]/Index[844 40]/Info 843 0 R/Length 97/Prev 530545/Root 845 0 R/Size 884/Type/XRef/W[1 3 1]>>stream h�bbd`\u0010``b``n\u0005���`�\u0001�d�\u0002�\u0007�Iv0�\u0007&�@$K7�< \u0016�\b\"�S@�z\u001bX| �d�_\u000ebG�\u0002I�\u00023 �w�6\u0003\u0013#\u0003�m�8� ���\u0019��y \u0010`��'\u000fN endstream endobj startxref 0 %%EOF 883 0 obj <>stream h�b```\u0002� \u0006\u0016\u0006\u0006�E B \b \u0004\u0014c\u0005b�\u0007 \u0006L\u00101&�\u001b� �'(���c��PӘ����8C�*A�\b�3�d\u0007�\u0006�\u0006�ˌ�...",
+      "id": "a3844888f6b71ba437fea55c96665cde",
+      "detectado_em": "29/07/2026 01:35"
+    },
+    {
+      "titulo": "Lançamento Edital 14/2026 – Compet Superior",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/04/2026.04.28-Compet-Superior.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1235 0 R/ViewerPreferences 1236 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��]Ks�F��+B�\u0001�� \u0011D=�\u0002\" ��d�ˉ���8�\u0007� Zl�n��M�A�����5������iw/{���z5�\"E� ��F\u0001���������]��X���W_ ?����O�:���lw��㳿_�ǯW���U��]...",
+      "id": "88d3b353051bea1f1a4f8125fc10f987",
+      "detectado_em": "29/07/2026 01:35"
+    },
+    {
+      "titulo": "• Prorrogação de submissão Compet Superior (Edital 14/2026)",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/07/Prorrogação-de-submissão-do-Edital-14.2026-COMPET-Superior-1.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 4 0 obj (Identity) endobj 5 0 obj (Adobe) endobj 8 0 obj << /Filter /FlateDecode /Length 19926 /Length1 52624 /Type /Stream >> stream x�� |\u0014E�\u0007����If���I�aH\u0002� \u0010\u0002A&� GB\u0012r ��drhB� *\u0018@\u0001�\b�z�'���C � �\u0007�\u0017���* ����\u0017�����I\u0002��������j����WU�U}�ի���\u0004�\u0002�\b �\u0014;� �k�\u0004�=�����%�S��ǿ\u0006�>\u000e��^P��� �� �ق�JKsf��-�$ @w �bwMsu��\u001b�.\u0001�?\u000e幚E �c�tM\u0004hCy�ou��ͳ\u000e� ���x�t}��\u0015�A��`}���%u�\u0003�{�\u00165\u0001�\u0012\u001bj�/~...",
+      "id": "52ffe77bddcb8f96c487a05b8bb27eee",
+      "detectado_em": "29/07/2026 01:35"
+    },
+    {
+      "titulo": "Lançamento Edital nº 12/2026 do Programa de Bolsas de Fixação de Pesquisadores (PBFP 2026.2)",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/03/Edital-12-2026-BFP_2026-03-30FNAL-1.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.5 %���� 1076 0 obj <> endobj 1100 0 obj <>/Filter/FlateDecode/ID[<9B1A0B335219E3517037BA24F55F2B4E> ]/Index[1076 43]/Info 1075 0 R/Length 121/Prev 445952/Root 1077 0 R/Size 1119/Type/XRef/W[1 3 1]>>stream h�bbd`\u0010``b``� \"\u0019'�H&^\u0010ɺ\u0019̞\u000ef��H\u0016+�Jw0{)�] f�U�\u0006�9�Adt,�d���\"�W�D �@�R=������� Rn\u0011H�-\u0017��\u0001r��\u0017� L� ,�A\"@\u0017ѐ�����\u0007��\u0003�g \u0013q endstream endobj startxref 0 %%EOF 1118 0 obj <>stream h�b```\u0002�� �...",
+      "id": "9e8f0fea54623c13fa22c5a58c34c02f",
+      "detectado_em": "29/07/2026 01:35"
+    },
+    {
+      "titulo": "Lançamento Edital Global.PE em parceria com o Consulado do Reino Unido",
+      "link": "https://www.facepe.br/wp-content/uploads/2026/04/2026.04.06_Global_PE_UK.pdf",
+      "fonte": "FACEPE",
+      "estado": "Pernambuco",
+      "resumo": "%PDF-1.7 %���� 1 0 obj <>/Metadata 1026 0 R/ViewerPreferences 1027 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��=�r�Ƒ������� A�\u0003@!B��yj鐥���=�|��A�w�l �i�?m�ƒ\u000e�Q�O�.>mf�\u0003�n\u00149 \u0016\u0018�\u0003�\u001b�GV�3+���Yۯ���>�쳣g}_���Y%�N�W::�߫��M}�����������...",
+      "id": "bb3a7db92bd6f52e8dc8348fe297721b",
+      "detectado_em": "29/07/2026 01:35"
+    },
+    {
+      "titulo": "Lei de bolsas",
+      "link": "https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/88395/pdf",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "��he.�\n<\u0001\u0004&�\"W\n\n�q��\n�Ja\u001a&/>#���k/��'\u0011�\u0010��\u0012R��J��̱�U;Ss�\u0016�\u000e�]�-�\u00062\n}���0\u000f�e�V����H���B\"Z�aT\u0016�p'�)8�Ą��J��r\u0010�inxǔ��$�/L�b\n�ROUp�* �Q�s�U@\u001cTG�m�x��\n���j�\b9�\u001b������\u0015���f7�\u0015IM\u001bj�S�2�\u0013`��\u0004X\f���$��m\u0013+��*g\n���(�Z��.����X�����F\u0014j-[h�s��\"���鼫*��Re7[�P�\u0005�u�m\u001d��!��\u0018�y��UT���\u001d�^���ᵶ\u001c�jWq�...",
+      "id": "736b445498362b0cdcf53771ea8c0e27",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Programas e ações",
+      "link": "https://goias.gov.br/fapeg/acoes/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Institucional Carta de Serviços Acesso Rápido A Fundação Diretoria Conselho Superior Integrantes Consup Regimento Consup Atas de reuniões Missão,Visão e Valores Legislação Reorganização da Estrutura Administrativa da Fapeg Lei de Criação Alteração da Lei n°16.690 Lei de bolsas Lei de inovação Organização Administrativa Estatutos Decreto Nº 10.322, 19 de Setembro de 2023. Estatuto da Fapeg Decreto...",
+      "id": "d1566c87ddc097c1b0336eaf5f941f45",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Dúvidas Frequentes – Bolsas",
+      "link": "https://goias.gov.br/fapeg/pesquisador/duvidas-frequentes/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Institucional Carta de Serviços Acesso Rápido A Fundação Diretoria Conselho Superior Integrantes Consup Regimento Consup Atas de reuniões Missão,Visão e Valores Legislação Reorganização da Estrutura Administrativa da Fapeg Lei de Criação Alteração da Lei n°16.690 Lei de bolsas Lei de inovação Organização Administrativa Estatutos Decreto Nº 10.322, 19 de Setembro de 2023. Estatuto da Fapeg Decreto...",
+      "id": "05aded6720c242aebb65f29d3993c1ba",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Dúvidas Frequentes – Auxílios",
+      "link": "https://goias.gov.br/fapeg/pesquisador/duvidas-frequentes-auxilios/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Institucional Carta de Serviços Acesso Rápido A Fundação Diretoria Conselho Superior Integrantes Consup Regimento Consup Atas de reuniões Missão,Visão e Valores Legislação Reorganização da Estrutura Administrativa da Fapeg Lei de Criação Alteração da Lei n°16.690 Lei de bolsas Lei de inovação Organização Administrativa Estatutos Decreto Nº 10.322, 19 de Setembro de 2023. Estatuto da Fapeg Decreto...",
+      "id": "5fd5892d37c5f7deacd154b1c4875e27",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Requerer Bolsa de Formação - FAPEG",
+      "link": "https://www.go.gov.br/servicos/servico/requerer-bolsa-de-formacao-fapeg",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Resumo não disponível.",
+      "id": "bf940c570229d940edbe50abd2ae6000",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Requerer Bolsa de Pesquisa e Desenvolvimento (No País) - FAPEG",
+      "link": "https://www.go.gov.br/servicos/servico/requerer-bolsa-de-pesquisa-e-desenvolvimento-no-pais-fapeg",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Resumo não disponível.",
+      "id": "85ad941d9ec27254e7777c6b94086e8c",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Requerer Bolsa de Pesquisa e Desenvolvimento (No Exterior) - FAPEG",
+      "link": "https://www.go.gov.br/servicos/servico/requerer-bolsa-de-pesquisa-e-desenvolvimento-no-exterior-fapeg",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Resumo não disponível.",
+      "id": "a3e19e10d5e74f8def985e2999a94d2b",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Requerer Auxílio à Inovação - FAPEG",
+      "link": "https://www.go.gov.br/servicos/servico/requerer-auxilio-a-inovacao-fapeg",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Resumo não disponível.",
+      "id": "25d3d9d920cdc8527c5376721edee1cb",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Requerer Bolsa de Fomento Tecnológico e Extensão Inovadora - FAPEG",
+      "link": "https://www.go.gov.br/servicos/servico/requerer-bolsa-de-fomento-tecnologico-e-extensao-inovadora-fapeg",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Resumo não disponível.",
+      "id": "766a6905658f682adc8f0e969d8bfb83",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Requerer Auxílio à Participação em Evento de CT&I - FAPEG",
+      "link": "https://www.go.gov.br/servicos/servico/requerer-auxilio-a-participacao-em-evento-de-ct-i-fapeg",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Resumo não disponível.",
+      "id": "014a1bf30c08ca45dc088bc5677c92a9",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Divulgado resultado final do Edital de Fomento à Rede Goiana",
+      "link": "https://goias.gov.br/fapeg/divulgado-resultado-final-do-edital-de-fomento-a-rede-goiana-de-laboratorios-de-inovacao-2a-chamada/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...",
+      "id": "290b62ca18d83ff8d8447d81dce4ccab",
+      "detectado_em": "29/07/2026 01:36"
+    },
+    {
+      "titulo": "Divulgado resultado de edital que levará 70 pesquisadores goianos a",
+      "link": "https://goias.gov.br/fapeg/divulgado-resultado-de-edital-que-levara-70-pesquisadores-goianos-a-eventos-cientificos-no-exterior/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...",
+      "id": "5355fdd6d8b79eb3bf44a844a56c6ba8",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Prorrogado prazo para submissão de propostas ao edital de Conservação da Biodiversidade Legado Verdes do Cerrado",
+      "link": "https://goias.gov.br/fapeg/prorrogado-prazo-para-submissao-de-propostas-ao-edital-de-conservacao-da-biodiversidade-legado-verdes-do-cerrado/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...",
+      "id": "1f5459d00f328923329e5862cc222d24",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Prazo para inscrição no edital de Conservação da Biodiversidade Legado Verdes do Cerrado termina no próximo dia 23",
+      "link": "https://goias.gov.br/fapeg/prazo-para-inscricao-no-edital-de-conservacao-da-biodiversidade-legado-verdes-do-cerrado-termina-no-proximo-dia-23/",
+      "fonte": "FAPEG",
+      "estado": "Goiás",
+      "resumo": "Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...",
+      "id": "65ae77f78ada46da04c67d7ea82f2b53",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas Internacionais",
+      "link": "https://fapes.es.gov.br/chamadas",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "e0a5a49a268eee177d729406301e10a4",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Programas Estratégicos",
+      "link": "https://fapes.es.gov.br/programas-estrategicos",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "1bd69f81cac5595b56ef4228268a28b1",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas Públicas",
+      "link": "https://fapes.es.gov.br/chamamento-publico",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "43c8bdd56529a4535b6b1cba57a061e1",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas Internacionais",
+      "link": "https://fapes.es.gov.br/chamadas-internacionais",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "74ac27f2b835decaf38dd7bcef150091",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas Internacionais",
+      "link": "https://fapes.es.gov.br/editais-em-julgamento-chamadas-internacionais-2",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "3df7e582fd91a6b743f68ad74b99211f",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Programas em Ação",
+      "link": "https://fapes.es.gov.br/editais",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "326e2eb86579754a0ef614bbfcffad7c",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Termo de Fomento/Colaboração/Cooperação",
+      "link": "https://fapes.es.gov.br/termo-de-fomento-colaboracao-cooperacao",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...",
+      "id": "622c71d8227a0721e1097bf822135ce4",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Programas e Ações",
+      "link": "https://transparencia.es.gov.br/Orcamento/PPA",
+      "fonte": "FAPES",
+      "estado": "Espírito Santo",
+      "resumo": "Início Receitas e Orçamentos Leis Orçamentárias Plano Plurianual (PPA) Plano Plurianual (PPA) O Plano Plurianual (PPA) define as prioridades do Governo por um período de quatro anos. Início Receitas e Orçamentos Leis Orçamentárias Plano Plurianual (PPA) Plano Plurianual (PPA) O Plano Plurianual (PPA) define as prioridades do Governo por um período de quatro anos. Início Receitas e Orçamentos Leis...",
+      "id": "eb0852286105df39d5e7baa05689e0f9",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Auxílios e Bolsas",
+      "link": "https://fapemig.br/auxilios-e-bolsas",
+      "fonte": "FAPEMIG",
+      "estado": "Minas Gerais",
+      "resumo": "Para cumprir seus objetivos, a FAPEMIG apoia a pesquisa e a inovação científica e tecnológica a partir da concessão de apoio e recursos financeiros, tais como Auxílios e Bolsas . As diversas modalidades de fomento e seus programas específicos são apresentados no Caderno de Modalidade de Fomentos . Auxílios Aporte de recursos financeiros, em benefício de pesquisador, diretamente ou por meio de...",
+      "id": "e8dc81a1f249fd1ae6397d10ed74697c",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Explorar Chamadas",
+      "link": "https://fapemig.br/oportunidades/chamadas-e-editais?status=aberta",
+      "fonte": "FAPEMIG",
+      "estado": "Minas Gerais",
+      "resumo": "Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores",
+      "id": "305133c4fdb16c998f6cce0cb77365f9",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Linhas de Fomento",
+      "link": "https://fapemig.br/auxilios-e-bolsas/linhas-de-fomento",
+      "fonte": "FAPEMIG",
+      "estado": "Minas Gerais",
+      "resumo": "A FAPEMIG estimula o desenvolvimento científico, tecnológico e de inovação por meio de diversas modalidades de apoio, que podem ser divididas em quatro grandes grupos: Pesquisa, Capacitação de Pessoas, Inovação e Divulgação Científica. As modalidades de fomento disponíveis são apresentadas no Caderno de Modalidade de Fomentos . As propostas para solicitação de financiamento dentro das modalidades...",
+      "id": "67d9b6268561dcce3766ede9c9bbcd4a",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Valores de Auxílios e Bolsas",
+      "link": "https://fapemig.br/auxilios-e-bolsas/valores-de-auxilios-e-bolsas",
+      "fonte": "FAPEMIG",
+      "estado": "Minas Gerais",
+      "resumo": "A FAPEMIG oferece diferentes formas de apoio financeiro para fomentar a ciência, a tecnologia e a inovação em Minas Gerais. Esta seção apresenta os valores atualizados referentes às bolsas, auxílios, diárias e demais modalidades de fomento disponibilizadas pela Fundação. As informações são atualizadas conforme as diretrizes institucionais e estão disponíveis para consulta, auxiliando...",
+      "id": "62ff4de273776325396a50ff8b05239c",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas e Editais",
+      "link": "https://fapemig.br/oportunidades/chamadas-e-editais",
+      "fonte": "FAPEMIG",
+      "estado": "Minas Gerais",
+      "resumo": "Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores",
+      "id": "50cd5381b9a9c28ce9539ec4597d8f49",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Programas Estratégicos",
+      "link": "https://fapesp.br/programas-estrategicos",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "a63a14b09000ca2a9126bca8b1edcf39",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Outros Programas",
+      "link": "https://fapesp.br/programas",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "d1dc71d348bced2c690ed53c68975486",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas de Propostas",
+      "link": "https://fapesp.br/chamadas/ ",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "a2fe0104cdd6c0b890249b0b8c405b14",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Avaliação de Programas",
+      "link": "https://fapesp.br/avaliacao",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "4bc21a544c3b68e154da3157f5f49b08",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Oportunidades de Bolsas",
+      "link": "https://fapesp.br/oportunidades",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP | Fundo de Amparo à Pesquisa do Estado de São Paulo Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP |...",
+      "id": "83edfad584db788e4093d21f3c4fd1b5",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Estratégias de Fomento à Pesquisa",
+      "link": "https://fapesp.br/6",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "2cdcec9f9aa4fd4d35f5a3dfb44de5a2",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Programa de Integridade",
+      "link": "https://fapesp.br/integridade",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "7bf0351c104ba1735cb9fc5630618963",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamadas FAPESP",
+      "link": "https://fapesp.br/chamadas",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "f16df94b57289cdf093de2c0686645ed",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Estatísticas do Fomento FAPESP",
+      "link": "https://fomento.fapesp.br/",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "905e0b01647b2b2602617ccad96e77f1",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Bolsas concedidas em Auxílios",
+      "link": "https://fapesp.br/bco",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "f97dc6c60057cee6aa2f6d634fd43c03",
+      "detectado_em": "29/07/2026 01:37"
+    },
+    {
+      "titulo": "Chamada de Propostas FAPESP",
+      "link": "https://fapesp.br/chamadas-html",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "7d1617fc0b2109ba984ed9d5f2998196",
+      "detectado_em": "29/07/2026 01:38"
+    },
+    {
+      "titulo": "Oportunidades de Bolsas",
+      "link": "http://fapesp.br/oportunidades/",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP | Fundo de Amparo à Pesquisa do Estado de São Paulo Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP |...",
+      "id": "64faacc6abfb50d9f447e9697396458d",
+      "detectado_em": "29/07/2026 01:38"
+    },
+    {
+      "titulo": "Valores Contratados (Bolsas e Auxílios)",
+      "link": "https://fapesp.br/381",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "b75df1fe3a41fd58ebeb452e0d237d6b",
+      "detectado_em": "29/07/2026 01:38"
+    },
+    {
+      "titulo": "Chamadas de Propostas",
+      "link": "https://fapesp.br/2185/chamadas-de-propostas-2026",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "22745989af4a21485e35940ee4e5f61e",
+      "detectado_em": "29/07/2026 01:38"
+    },
+    {
+      "titulo": "Chamada de Propostas para o Programa PIPE Jornada Tecnológica 1ª Rodada 2026 – Fase 1",
+      "link": "https://fapesp.br/18243",
+      "fonte": "FAPESP",
+      "estado": "São Paulo",
+      "resumo": "Resumo não disponível.",
+      "id": "af48f311bfe4837d477c32a01ece4029",
+      "detectado_em": "29/07/2026 01:38"
+    },
+    {
+      "titulo": "Chamadas Abertas",
+      "link": "https://fapesc.sc.gov.br/chamadas-abertas/",
+      "fonte": "FAPESC",
+      "estado": "Santa Catarina",
+      "resumo": "CHAMADAS ABERTAS CHAMADAS EM ANDAMENTO DIVULGAÇÃO DE RESULTADOS CHAMADAS ENCERRADAS COMUNICADOS FAPESC Todas chamadas abertas Chamadas abertas Chamadas publicas EDITAL DE CHAMADA PÚBLICA FAPESC/SEF N.º 48/2026 PROGRAMAS SEF DE PESQUISA, DESENVOLVIMENTO E INOVAÇÃO 28/07/2026 Chamadas abertas Chamadas publicas EDITAL DE CHAMADA PÚBLICA FAPESC/SSP N.º 47/2026 PROGRAMA DE PESQUISA APLICADA,...",
+      "id": "a98b83f7dae7ae6dda4233b1b2e7ebf4",
+      "detectado_em": "29/07/2026 01:38"
+    },
+    {
+      "titulo": "Chamadas em Andamento",
+      "link": "https://fapesc.sc.gov.br/chamadas-em-andamento/",
+      "fonte": "FAPESC",
+      "estado": "Santa Catarina",
+      "resumo": "CHAMADAS EM ANDAMENTO CHAMADAS ABERTAS DIVULGAÇÃO DE RESULTADOS CHAMADAS ENCERRADAS COMUNICADOS FAPESC Todas chamadas em andamento Chamadas em andamento EDITAL DE CHAMADA PÚBLICA FAPESC N.º 38/2026 PROGRAMA ECONOMIA AZUL: DESENVOLVIMENTO TECNOLÓGICO E RESILIÊNCIA DA AQUICULTURA EM SANTA CATARINA 26/06/2026 Chamadas em andamento Chamadas publicas EDITAL DE CHAMADA PÚBLICA FAPESC N.º 36/2026...",
+      "id": "6ed85612621cfe4a52b7c672fdf84f21",
+      "detectado_em": "29/07/2026 01:38"
+    }
+  ]
+}
