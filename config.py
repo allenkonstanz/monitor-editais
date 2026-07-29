@@ -4,7 +4,7 @@
 
 OUTPUT_HTML_FILE = "index.html"
 CHECK_INTERVAL_MINUTES = 10080
-MAX_EDITAL_AGE_DAYS = 90  # Oculta editais com mais de 30 dias automaticamente
+MAX_EDITAL_AGE_DAYS = 90  # Oculta editais com mais de 90 dias automaticamente
 
 PALAVRAS_IGNORADAS = [
     "mestrado",
