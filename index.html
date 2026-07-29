@@ -11,6 +11,17 @@
         .card { transition: transform 0.2s, box-shadow 0.2s; border-radius: 8px; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important; }
         .disclaimer-box { background-color: #fff3cd; border-left: 5px solid #ffc107; color: #856404; font-size: 0.9rem; padding: 1rem; border-radius: 4px; }
+        
+        /* Efeito de Lazy Loading com Animação Suave */
+        .lazy-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+        }
+        .lazy-card.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -19,7 +30,7 @@
         <div class="container">
             <h1 class="fw-bold">📢 Monitor de Editais FAPs</h1>
             <p class="mb-1">Plataforma independente de agregação e acompanhamento de oportunidades</p>
-            <small class="opacity-75">Última checagem: 29/07/2026 às 02:20 | Total de editais monitorados: <strong>69</strong></small>
+            <small class="opacity-75">Última checagem: 29/07/2026 às 02:32 | Total de editais ativos: <strong>69</strong></small>
         </div>
     </div>
 
@@ -34,17 +45,17 @@
 
         <div class="row justify-content-center mb-4">
             <div class="col-md-8">
-                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Filtrar por palavra-chave, FAP ou Estado...">
+                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Filtrar por palavra-chave ou Estado...">
             </div>
         </div>
 
         <div class="row" id="editaisContainer">
             
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital inovação aberta para desafios digitais (nº 23/2026) edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital inovação aberta para desafios digitais (nº 23/2026) edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital Inovação Aberta para Desafios Digitais (nº 23/2026)</h5>
@@ -61,11 +72,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital global.pe: espanha (nº 22/2026) atualizado em 17.07.2026 edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital global.pe: espanha (nº 22/2026) atualizado em 17.07.2026 edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital Global.PE: Espanha (nº 22/2026) atualizado em 17.07.2026</h5>
@@ -82,11 +93,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="• errata: ajustes sobre o edital facepe nº 22/2026 – global.pe: espanha edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="• errata: ajustes sobre o edital facepe nº 22/2026 – global.pe: espanha edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">• Errata: Ajustes sobre o Edital Facepe nº 22/2026 – Global.PE: Espanha</h5>
@@ -103,11 +114,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital programa de apoio à fixação de doutores no brasil – conhecimento brasil (profix-cb – edital nº 20/2026) edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital programa de apoio à fixação de doutores no brasil – conhecimento brasil (profix-cb – edital nº 20/2026) edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital Programa de Apoio à Fixação de Doutores no Brasil – Conhecimento Brasil (Profix-CB – edital nº 20/2026)</h5>
@@ -124,11 +135,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital de apoio aos espaços de criatividade, inovação e aprendizagem  espaços cria – nº 19/2026 edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital de apoio aos espaços de criatividade, inovação e aprendizagem  espaços cria – nº 19/2026 edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital de Apoio aos Espaços de Criatividade, Inovação e Aprendizagem  Espaços CRIA – nº 19/2026</h5>
@@ -145,11 +156,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital facepe nº 18/2026 – apoio à popularização da ciência na semana nacional de ciência e tecnologia edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital facepe nº 18/2026 – apoio à popularização da ciência na semana nacional de ciência e tecnologia edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital Facepe nº 18/2026 – Apoio à Popularização da Ciência na Semana Nacional de Ciência e Tecnologia</h5>
@@ -166,11 +177,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital nº 17/2026 compet médio-tec: habilidades de futuro para o ensino médio e técnico edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital nº 17/2026 compet médio-tec: habilidades de futuro para o ensino médio e técnico edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital nº 17/2026 Compet Médio-Tec: Habilidades de Futuro para o Ensino Médio e Técnico</h5>
@@ -187,11 +198,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="edital 16/2026 – mães cientistas de pernambuco edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="edital 16/2026 – mães cientistas de pernambuco edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Edital 16/2026 – Mães Cientistas de Pernambuco</h5>
@@ -208,11 +219,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="• errata nº 01/2026 ao edital facepe nº 16/2026 – mães cientistas de pernambuco edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="• errata nº 01/2026 ao edital facepe nº 16/2026 – mães cientistas de pernambuco edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">• ERRATA Nº 01/2026 AO EDITAL FACEPE Nº 16/2026 – Mães Cientistas de Pernambuco</h5>
@@ -229,11 +240,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FACEPE" data-texto="lançamento edital facepe/fapesp tecnologias quânticas e transição energética (nº 15/2026) edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Pernambuco" data-texto="lançamento edital facepe/fapesp tecnologias quânticas e transição energética (nº 15/2026) edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FACEPE</strong>
-                    <small class="badge bg-light text-dark">Pernambuco</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Pernambuco</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lançamento Edital Facepe/Fapesp Tecnologias Quânticas e Transição Energética (nº 15/2026)</h5>
@@ -250,7 +261,7 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESQ" data-texto="bolsas de formação capes ir para o conteúdo navegar para esquerda navegar para direita administração administração
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Paraíba" data-texto="bolsas de formação capes ir para o conteúdo navegar para esquerda navegar para direita administração administração
                 penitenciária agricultura
                 familiar e desenvolvimento do semiárido casa civil do
                 governador casa militar
@@ -258,8 +269,8 @@
                ...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESQ</strong>
-                    <small class="badge bg-light text-dark">Paraíba</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Paraíba</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Bolsas de Formação CAPES</h5>
@@ -281,11 +292,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPAC" data-texto="programa de bolsas de iniciação científica programa de bolsas de iniciação científica | fundação de amparo á pesquisa do estado do acre programa de bolsas de iniciação científica – fundação de amparo á pesquisa do estado do acre skip to content premium addons modal box title × modal box content...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Acre" data-texto="programa de bolsas de iniciação científica programa de bolsas de iniciação científica | fundação de amparo á pesquisa do estado do acre programa de bolsas de iniciação científica – fundação de amparo á pesquisa do estado do acre skip to content premium addons modal box title × modal box content...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPAC</strong>
-                    <small class="badge bg-light text-dark">Acre</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Acre</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programa de Bolsas de Iniciação Científica</h5>
@@ -302,11 +313,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPAC" data-texto="ppsus – programa de pesquisa para o sus ppsus – programa de pesquisa para o sus | fundação de amparo á pesquisa do estado do acre ppsus – programa de pesquisa para o sus – fundação de amparo á pesquisa do estado do acre skip to...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Acre" data-texto="ppsus – programa de pesquisa para o sus ppsus – programa de pesquisa para o sus | fundação de amparo á pesquisa do estado do acre ppsus – programa de pesquisa para o sus – fundação de amparo á pesquisa do estado do acre skip to...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPAC</strong>
-                    <small class="badge bg-light text-dark">Acre</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Acre</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">PPSUS – Programa de Pesquisa para o SUS</h5>
@@ -323,11 +334,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPAC" data-texto="peiex – programa de qualificação para exportação no acre peiex – programa de qualificação para exportação no acre | fundação de amparo á pesquisa do estado do acre peiex – programa de qualificação para exportação no acre – fundação de amparo á pesquisa do estado do acre skip to...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Acre" data-texto="peiex – programa de qualificação para exportação no acre peiex – programa de qualificação para exportação no acre | fundação de amparo á pesquisa do estado do acre peiex – programa de qualificação para exportação no acre – fundação de amparo á pesquisa do estado do acre skip to...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPAC</strong>
-                    <small class="badge bg-light text-dark">Acre</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Acre</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">PEIEX – Programa de Qualificação para Exportação no Acre</h5>
@@ -344,11 +355,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPAC" data-texto="programa primeiros projetos (ppp) programa primeiros projetos (ppp) | fundação de amparo á pesquisa do estado do acre programa primeiros projetos (ppp) – fundação de amparo á pesquisa do estado do acre skip to...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Acre" data-texto="programa primeiros projetos (ppp) programa primeiros projetos (ppp) | fundação de amparo á pesquisa do estado do acre programa primeiros projetos (ppp) – fundação de amparo á pesquisa do estado do acre skip to...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPAC</strong>
-                    <small class="badge bg-light text-dark">Acre</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Acre</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programa Primeiros Projetos (PPP)</h5>
@@ -365,11 +376,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="programas e ações fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="programas e ações fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programas e Ações</h5>
@@ -386,11 +397,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="programação de férias fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="programação de férias fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programação de Férias</h5>
@@ -407,11 +418,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="declaração de bolsa gerência executiva de tecnologia da informação - geti 2026 © fundação de amparo à pesquisa do estado de alagoas. gerência executiva de tecnologia da informação - geti 2026 © fundação de amparo à pesquisa do estado de alagoas.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="declaração de bolsa gerência executiva de tecnologia da informação - geti 2026 © fundação de amparo à pesquisa do estado de alagoas. gerência executiva de tecnologia da informação - geti 2026 © fundação de amparo à pesquisa do estado de alagoas.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Declaração de bolsa</h5>
@@ -428,11 +439,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="bolsas para doutorandos na alemanha daad/confap fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="bolsas para doutorandos na alemanha daad/confap fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Bolsas para doutorandos na Alemanha DAAD/Confap</h5>
@@ -449,11 +460,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="chamadas simbora – inscrições para novas turmas centelha 3 al fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="chamadas simbora – inscrições para novas turmas centelha 3 al fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">CHAMADAS SIMBORA – Inscrições para novas turmas Centelha 3 AL</h5>
@@ -470,11 +481,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="edital fapeal – nº 05/2026 programa de bolsas de iniciação científica júnior – pibic jr alagoas fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="edital fapeal – nº 05/2026 programa de bolsas de iniciação científica júnior – pibic jr alagoas fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Edital Fapeal – nº 05/2026 Programa de Bolsas de Iniciação Científica Júnior – Pibic Jr Alagoas</h5>
@@ -491,11 +502,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="edital 01/2026 edufal/fapeal – edital para publicação de teses e dissertações fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="edital 01/2026 edufal/fapeal – edital para publicação de teses e dissertações fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Edital 01/2026 Edufal/Fapeal – Edital para Publicação de Teses e Dissertações</h5>
@@ -512,11 +523,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEAL" data-texto="edital nº 06/2026 –  programa nacional de apoio à geração de empreendimentos inovadores  programa centelha 3 alagoas – fapeal/secti-al/sebrae-al fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Alagoas" data-texto="edital nº 06/2026 –  programa nacional de apoio à geração de empreendimentos inovadores  programa centelha 3 alagoas – fapeal/secti-al/sebrae-al fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do pesquisador alagoano fapeal – fundação de amparo à pesquisa do estado de alagoas a casa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEAL</strong>
-                    <small class="badge bg-light text-dark">Alagoas</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Alagoas</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Edital Nº 06/2026 –  Programa Nacional de Apoio à Geração de Empreendimentos Inovadores  Programa Centelha 3 Alagoas – Fapeal/Secti-AL/Sebrae-AL</h5>
@@ -533,11 +544,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMIG" data-texto="auxílios e bolsas para cumprir seus objetivos, a fapemig apoia a pesquisa e a inovação científica e tecnológica a partir da concessão de apoio e recursos financeiros, tais como auxílios e bolsas . as diversas modalidades de fomento e seus programas específicos são apresentados no caderno de modalidade de fomentos . auxílios aporte de recursos financeiros, em...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Minas Gerais" data-texto="auxílios e bolsas para cumprir seus objetivos, a fapemig apoia a pesquisa e a inovação científica e tecnológica a partir da concessão de apoio e recursos financeiros, tais como auxílios e bolsas . as diversas modalidades de fomento e seus programas específicos são apresentados no caderno de modalidade de fomentos . auxílios aporte de recursos financeiros, em...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMIG</strong>
-                    <small class="badge bg-light text-dark">Minas Gerais</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Minas Gerais</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Auxílios e Bolsas</h5>
@@ -554,11 +565,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMIG" data-texto="explorar chamadas filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores todos ambiente de inovação empresas governo ict pesquisadores">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Minas Gerais" data-texto="explorar chamadas filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores todos ambiente de inovação empresas governo ict pesquisadores">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMIG</strong>
-                    <small class="badge bg-light text-dark">Minas Gerais</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Minas Gerais</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Explorar Chamadas</h5>
@@ -575,11 +586,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMIG" data-texto="linhas de fomento a fapemig estimula o desenvolvimento científico, tecnológico e de inovação por meio de diversas modalidades de apoio, que podem ser divididas em quatro grandes grupos: pesquisa, capacitação de pessoas, inovação e divulgação científica. as modalidades de fomento disponíveis são apresentadas no caderno de modalidade de fomentos . as propostas para...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Minas Gerais" data-texto="linhas de fomento a fapemig estimula o desenvolvimento científico, tecnológico e de inovação por meio de diversas modalidades de apoio, que podem ser divididas em quatro grandes grupos: pesquisa, capacitação de pessoas, inovação e divulgação científica. as modalidades de fomento disponíveis são apresentadas no caderno de modalidade de fomentos . as propostas para...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMIG</strong>
-                    <small class="badge bg-light text-dark">Minas Gerais</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Minas Gerais</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Linhas de Fomento</h5>
@@ -596,11 +607,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMIG" data-texto="valores de auxílios e bolsas a fapemig oferece diferentes formas de apoio financeiro para fomentar a ciência, a tecnologia e a inovação em minas gerais. esta seção apresenta os valores atualizados referentes às bolsas, auxílios, diárias e demais modalidades de fomento disponibilizadas pela fundação. as informações são atualizadas conforme as diretrizes institucionais e estão...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Minas Gerais" data-texto="valores de auxílios e bolsas a fapemig oferece diferentes formas de apoio financeiro para fomentar a ciência, a tecnologia e a inovação em minas gerais. esta seção apresenta os valores atualizados referentes às bolsas, auxílios, diárias e demais modalidades de fomento disponibilizadas pela fundação. as informações são atualizadas conforme as diretrizes institucionais e estão...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMIG</strong>
-                    <small class="badge bg-light text-dark">Minas Gerais</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Minas Gerais</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Valores de Auxílios e Bolsas</h5>
@@ -617,11 +628,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMIG" data-texto="chamadas e editais filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores todos ambiente de inovação empresas governo ict pesquisadores">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Minas Gerais" data-texto="chamadas e editais filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores filtros todos ambiente de inovação empresas governo ict pesquisadores todos ambiente de inovação empresas governo ict pesquisadores">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMIG</strong>
-                    <small class="badge bg-light text-dark">Minas Gerais</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Minas Gerais</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas e Editais</h5>
@@ -638,11 +649,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema/uema nº 19/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema/uema nº 19/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA/UEMA nº 19/2026</h5>
@@ -659,11 +670,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema nº 18/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema nº 18/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA Nº 18/2026</h5>
@@ -680,11 +691,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema/emap nº 17/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema/emap nº 17/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA/EMAP nº 17/2026</h5>
@@ -701,11 +712,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema/emap nº 16/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema/emap nº 16/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA/EMAP nº 16/2026</h5>
@@ -722,11 +733,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema/saf n° 15/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema/saf n° 15/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA/SAF n° 15/2026</h5>
@@ -743,11 +754,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema/fmrb n° 14/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema/fmrb n° 14/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Edital FAPEMA/FMRB n° 14/2026</h5>
@@ -764,11 +775,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema nº 13/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema nº 13/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA nº 13/2026</h5>
@@ -785,11 +796,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema nº 12/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema nº 12/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Edital FAPEMA nº 12/2026</h5>
@@ -806,11 +817,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEMA" data-texto="edital fapema nº 11/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Maranhão" data-texto="edital fapema nº 11/2026 https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@fapemaoficial tema claro/escuro aumentar corpo de texto...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEMA</strong>
-                    <small class="badge bg-light text-dark">Maranhão</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Maranhão</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">EDITAL FAPEMA nº 11/2026</h5>
@@ -827,11 +838,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESC" data-texto="chamadas abertas chamadas abertas chamadas em andamento divulgação de resultados chamadas encerradas comunicados fapesc todas chamadas abertas chamadas abertas chamadas publicas edital de chamada pública fapesc/sef n.º 48/2026 programas sef de pesquisa, desenvolvimento e inovação 28/07/2026 chamadas abertas chamadas publicas edital de chamada pública fapesc/ssp...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Santa Catarina" data-texto="chamadas abertas chamadas abertas chamadas em andamento divulgação de resultados chamadas encerradas comunicados fapesc todas chamadas abertas chamadas abertas chamadas publicas edital de chamada pública fapesc/sef n.º 48/2026 programas sef de pesquisa, desenvolvimento e inovação 28/07/2026 chamadas abertas chamadas publicas edital de chamada pública fapesc/ssp...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESC</strong>
-                    <small class="badge bg-light text-dark">Santa Catarina</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Santa Catarina</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas Abertas</h5>
@@ -848,11 +859,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESC" data-texto="chamadas em andamento chamadas em andamento chamadas abertas divulgação de resultados chamadas encerradas comunicados fapesc todas chamadas em andamento chamadas em andamento edital de chamada pública fapesc n.º 38/2026 programa economia azul: desenvolvimento tecnológico e resiliência da aquicultura em santa catarina 26/06/2026 chamadas em andamento chamadas publicas...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Santa Catarina" data-texto="chamadas em andamento chamadas em andamento chamadas abertas divulgação de resultados chamadas encerradas comunicados fapesc todas chamadas em andamento chamadas em andamento edital de chamada pública fapesc n.º 38/2026 programa economia azul: desenvolvimento tecnológico e resiliência da aquicultura em santa catarina 26/06/2026 chamadas em andamento chamadas publicas...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESC</strong>
-                    <small class="badge bg-light text-dark">Santa Catarina</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Santa Catarina</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas em Andamento</h5>
@@ -869,11 +880,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESC" data-texto="chamadas encerradas chamadas encerradas chamadas em andamento divulgação de resultados comunicados fapesc todas chamadas encerradas chamadas encerradas edital de chamada pública fapesc n.º 35/2026 credenciamento de incubadoras de empresas do estado de santa catarina 09/06/2026 chamadas encerradas edital suplementar fapesc n.º 25/2026 ao programa de redução de...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Santa Catarina" data-texto="chamadas encerradas chamadas encerradas chamadas em andamento divulgação de resultados comunicados fapesc todas chamadas encerradas chamadas encerradas edital de chamada pública fapesc n.º 35/2026 credenciamento de incubadoras de empresas do estado de santa catarina 09/06/2026 chamadas encerradas edital suplementar fapesc n.º 25/2026 ao programa de redução de...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESC</strong>
-                    <small class="badge bg-light text-dark">Santa Catarina</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Santa Catarina</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas encerradas</h5>
@@ -890,11 +901,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="lei de bolsas edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="lei de bolsas edital em formato pdf. acesse o link oficial abaixo para visualizar o documento completo.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Lei de bolsas</h5>
@@ -911,11 +922,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="programas e ações institucional carta de serviços acesso rápido a fundação diretoria conselho superior integrantes consup regimento consup atas de reuniões missão,visão e valores legislação reorganização da estrutura administrativa da fapeg lei de criação alteração da lei n°16.690 lei de bolsas lei de inovação organização administrativa estatutos decreto nº 10.322,...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="programas e ações institucional carta de serviços acesso rápido a fundação diretoria conselho superior integrantes consup regimento consup atas de reuniões missão,visão e valores legislação reorganização da estrutura administrativa da fapeg lei de criação alteração da lei n°16.690 lei de bolsas lei de inovação organização administrativa estatutos decreto nº 10.322,...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programas e ações</h5>
@@ -932,11 +943,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="dúvidas frequentes – bolsas institucional carta de serviços acesso rápido a fundação diretoria conselho superior integrantes consup regimento consup atas de reuniões missão,visão e valores legislação reorganização da estrutura administrativa da fapeg lei de criação alteração da lei n°16.690 lei de bolsas lei de inovação organização administrativa estatutos decreto nº 10.322,...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="dúvidas frequentes – bolsas institucional carta de serviços acesso rápido a fundação diretoria conselho superior integrantes consup regimento consup atas de reuniões missão,visão e valores legislação reorganização da estrutura administrativa da fapeg lei de criação alteração da lei n°16.690 lei de bolsas lei de inovação organização administrativa estatutos decreto nº 10.322,...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Dúvidas Frequentes – Bolsas</h5>
@@ -953,11 +964,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="dúvidas frequentes – auxílios institucional carta de serviços acesso rápido a fundação diretoria conselho superior integrantes consup regimento consup atas de reuniões missão,visão e valores legislação reorganização da estrutura administrativa da fapeg lei de criação alteração da lei n°16.690 lei de bolsas lei de inovação organização administrativa estatutos decreto nº 10.322,...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="dúvidas frequentes – auxílios institucional carta de serviços acesso rápido a fundação diretoria conselho superior integrantes consup regimento consup atas de reuniões missão,visão e valores legislação reorganização da estrutura administrativa da fapeg lei de criação alteração da lei n°16.690 lei de bolsas lei de inovação organização administrativa estatutos decreto nº 10.322,...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Dúvidas Frequentes – Auxílios</h5>
@@ -974,11 +985,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="requerer bolsa de formação - fapeg consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="requerer bolsa de formação - fapeg consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Requerer Bolsa de Formação - FAPEG</h5>
@@ -995,11 +1006,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="requerer bolsa de pesquisa e desenvolvimento (no país) - fapeg consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="requerer bolsa de pesquisa e desenvolvimento (no país) - fapeg consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Requerer Bolsa de Pesquisa e Desenvolvimento (No País) - FAPEG</h5>
@@ -1016,11 +1027,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="requerer bolsa de pesquisa e desenvolvimento (no exterior) - fapeg consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="requerer bolsa de pesquisa e desenvolvimento (no exterior) - fapeg consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Requerer Bolsa de Pesquisa e Desenvolvimento (No Exterior) - FAPEG</h5>
@@ -1037,11 +1048,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="requerer auxílio à inovação - fapeg consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="requerer auxílio à inovação - fapeg consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Requerer Auxílio à Inovação - FAPEG</h5>
@@ -1058,11 +1069,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="requerer bolsa de fomento tecnológico e extensão inovadora - fapeg consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="requerer bolsa de fomento tecnológico e extensão inovadora - fapeg consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Requerer Bolsa de Fomento Tecnológico e Extensão Inovadora - FAPEG</h5>
@@ -1079,11 +1090,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPEG" data-texto="requerer auxílio à participação em evento de ct&i - fapeg consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Goiás" data-texto="requerer auxílio à participação em evento de ct&i - fapeg consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPEG</strong>
-                    <small class="badge bg-light text-dark">Goiás</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Goiás</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Requerer Auxílio à Participação em Evento de CT&I - FAPEG</h5>
@@ -1100,11 +1111,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="chamadas internacionais acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="chamadas internacionais acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas Internacionais</h5>
@@ -1121,11 +1132,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="programas estratégicos acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="programas estratégicos acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programas Estratégicos</h5>
@@ -1142,11 +1153,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="nossa bolsa acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="nossa bolsa acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Nossa Bolsa</h5>
@@ -1163,11 +1174,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="chamadas públicas acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="chamadas públicas acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas Públicas</h5>
@@ -1184,11 +1195,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="chamadas internacionais acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="chamadas internacionais acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas Internacionais</h5>
@@ -1205,11 +1216,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="chamadas internacionais acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="chamadas internacionais acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas Internacionais</h5>
@@ -1226,11 +1237,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="programas em ação acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="programas em ação acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programas em Ação</h5>
@@ -1247,11 +1258,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="termo de fomento/colaboração/cooperação acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="termo de fomento/colaboração/cooperação acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Termo de Fomento/Colaboração/Cooperação</h5>
@@ -1268,11 +1279,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="programas e ações início receitas e orçamentos leis orçamentárias plano plurianual (ppa) plano plurianual (ppa) o plano plurianual (ppa) define as prioridades do governo por um período de quatro anos. início receitas e orçamentos leis orçamentárias plano plurianual (ppa) plano plurianual (ppa) o plano plurianual (ppa) define as prioridades do governo por um período...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="Espírito Santo" data-texto="programas e ações início receitas e orçamentos leis orçamentárias plano plurianual (ppa) plano plurianual (ppa) o plano plurianual (ppa) define as prioridades do governo por um período de quatro anos. início receitas e orçamentos leis orçamentárias plano plurianual (ppa) plano plurianual (ppa) o plano plurianual (ppa) define as prioridades do governo por um período...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPES</strong>
-                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 Espírito Santo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programas e Ações</h5>
@@ -1289,11 +1300,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="programas estratégicos consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="programas estratégicos consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programas Estratégicos</h5>
@@ -1310,11 +1321,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="outros programas consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="outros programas consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Outros Programas</h5>
@@ -1331,11 +1342,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="chamadas de propostas consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="chamadas de propostas consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas de Propostas</h5>
@@ -1352,11 +1363,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="avaliação de programas consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="avaliação de programas consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Avaliação de Programas</h5>
@@ -1373,11 +1384,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="oportunidades de bolsas início oportunidades abertas oportunidades encerradas home open opportunities closed opportunities english português oportunidades de bolsas fellowship opportunities fapesp | fundo de amparo à pesquisa do estado de são paulo início oportunidades abertas oportunidades encerradas home open opportunities closed opportunities english português...">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="oportunidades de bolsas início oportunidades abertas oportunidades encerradas home open opportunities closed opportunities english português oportunidades de bolsas fellowship opportunities fapesp | fundo de amparo à pesquisa do estado de são paulo início oportunidades abertas oportunidades encerradas home open opportunities closed opportunities english português...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Oportunidades de Bolsas</h5>
@@ -1394,11 +1405,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="estratégias de fomento à pesquisa consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="estratégias de fomento à pesquisa consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Estratégias de Fomento à Pesquisa</h5>
@@ -1415,11 +1426,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="programa de integridade consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="programa de integridade consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Programa de Integridade</h5>
@@ -1436,11 +1447,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="chamadas fapesp consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="chamadas fapesp consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Chamadas FAPESP</h5>
@@ -1457,11 +1468,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="estatísticas do fomento fapesp consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="estatísticas do fomento fapesp consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Estatísticas do Fomento FAPESP</h5>
@@ -1478,11 +1489,11 @@
             </div>
         </div>
         
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPESP" data-texto="bolsas concedidas em auxílios consulte o edital completo no portal oficial.">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="São Paulo" data-texto="bolsas concedidas em auxílios consulte o edital completo no portal oficial.">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>FAPESP</strong>
-                    <small class="badge bg-light text-dark">São Paulo</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 São Paulo</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">Bolsas concedidas em Auxílios</h5>
@@ -1510,6 +1521,7 @@
     </footer>
 
     <script>
+        // Script de Busca em Tempo Real
         document.getElementById('searchInput').addEventListener('keyup', function() {
             let filter = this.value.toLowerCase();
             let cards = document.querySelectorAll('.edital-card');
@@ -1523,6 +1535,20 @@
                     card.style.display = 'none';
                 }
             });
+        });
+
+        // Script para Lazy Loading ao Rolar a Página (Intersection Observer)
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('loaded');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: "0px 0px 100px 0px" });
+
+            document.querySelectorAll('.lazy-card').forEach(card => observer.observe(card));
         });
     </script>
 </body>
