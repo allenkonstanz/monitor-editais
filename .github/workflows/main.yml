@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Baixar código do repositório
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configurar ambiente Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -32,5 +32,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add index.html editais_vistos.json
-          git commit -m "Atualização semanal do painel de editais" || exit 0
+          git commit -m "auto: atualização semanal do painel de editais" || exit 0
+          git pull --rebase origin main
           git push
