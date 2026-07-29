@@ -75,9 +75,52 @@ def baixar_pagina(url: str) -> Optional[BeautifulSoup]:
 
 
 def extrair_resumo(url: str, max_chars: int = 350) -> str:
-  soup = baixar_pagina(url)
-  if not soup:
-    return "Consulte o edital completo no portal oficial."
+    # 1. Se a URL terminar em .pdf, já define como arquivo PDF diretamente
+    if url.lower().endswith(".pdf"):
+        return "Edital em formato PDF. Acesse o link oficial abaixo para visualizar o documento completo."
+
+    try:
+        # Fazer uma requisição HEAD ou GET leve para verificar o tipo de conteúdo
+        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT_HTTP, stream=True)
+        resp.raise_for_status()
+
+        content_type = resp.headers.get("Content-Type", "").lower()
+
+        # 2. Se o servidor responder informando que o arquivo é PDF
+        if "application/pdf" in content_type:
+            return "Edital em formato PDF. Acesse o link oficial abaixo para visualizar o documento completo."
+
+        # Garante a codificação correta para caracteres em português (acentos)
+        resp.encoding = resp.apparent_encoding or "utf-8"
+        
+        # Lê o conteúdo HTML
+        soup = BeautifulSoup(resp.text, "lxml")
+
+        # Se o texto baixado começar com a assinatura de arquivo PDF (caso o Content-Type venha errado)
+        if resp.text.startswith("%PDF"):
+            return "Edital em formato PDF. Acesse o link oficial abaixo para visualizar o documento completo."
+
+        for tag in soup(["script", "style", "nav", "footer", "header", "aside", "form"]):
+            tag.decompose()
+
+        paragrafos = []
+        for p in soup.find_all(["p", "div"]):
+            t = p.get_text(" ", strip=True)
+            if len(t) > 60 and not any(x in t.lower() for x in ["cookie", "javascript", "menu", "login"]):
+                paragrafos.append(t)
+            if len(" ".join(paragrafos)) > max_chars:
+                break
+
+        if paragrafos:
+            resumo = " ".join(paragrafos)
+            return resumo[:max_chars].rsplit(" ", 1)[0] + "..." if len(resumo) > max_chars else resumo
+
+        texto_completo = " ".join(soup.get_text(separator=" ", strip=True).split())
+        return texto_completo[:max_chars].rsplit(" ", 1)[0] + "..." if len(texto_completo) > 80 else "Consulte o edital completo no portal oficial."
+
+    except Exception as e:
+        logger.error(f"Erro ao extrair resumo de {url}: {e}")
+        return "Consulte o edital completo no portal oficial."
 
   for tag in soup(
       ["script", "style", "nav", "footer", "header", "aside", "form"]
