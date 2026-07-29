@@ -60,7 +60,7 @@ def salvar_dados(dados: dict):
 
 def baixar_pagina(url: str) -> Optional[BeautifulSoup]:
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=25)
+        resp = requests.get(url, headers=HEADERS, timeout=15)
         resp.raise_for_status()
         resp.encoding = resp.apparent_encoding or "utf-8"
         return BeautifulSoup(resp.text, "lxml")
