@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Editais - FAPs</title>
+    <title>Agregador de Editais FAPs - Painel Independente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f4f6f9; font-family: system-ui, -apple-system, sans-serif; }
         .hero { background: linear-gradient(135deg, #0d6efd, #084298); color: white; padding: 2.5rem 1rem; }
         .card { transition: transform 0.2s, box-shadow 0.2s; border-radius: 8px; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important; }
+        .disclaimer-box { background-color: #fff3cd; border-left: 5px solid #ffc107; color: #856404; font-size: 0.9rem; padding: 1rem; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -17,20 +18,49 @@
     <div class="hero text-center mb-4 shadow-sm">
         <div class="container">
             <h1 class="fw-bold">📢 Monitor de Editais FAPs</h1>
-            <p class="mb-1">Atualização automática e acompanhamento de oportunidades</p>
-            <small class="opacity-75">Última atualização: 29/07/2026 às 01:38 | Total de editais: <strong>80</strong></small>
+            <p class="mb-1">Plataforma independente de agregação e acompanhamento de oportunidades</p>
+            <small class="opacity-75">Última checagem: 29/07/2026 às 02:05 | Total de editais monitorados: <strong>81</strong></small>
         </div>
     </div>
 
     <div class="container mb-5">
+
+        <!-- DISCLAIMER LEGAL -->
+        <div class="disclaimer-box mb-4 shadow-sm">
+            <strong>⚠️ AVISO IMPORTANTE:</strong>
+            Este site é um <strong>agregador independente</strong> e não possui vínculo, parceria ou chancela oficial com nenhuma Fundação de Amparo à Pesquisa (FAP) ou órgão governamental. 
+            As informações são coletadas automaticamente. <strong>Sempre consulte as publicações originais, prazos e eventuais retificações nos portais oficiais informados.</strong>
+        </div>
+
         <div class="row justify-content-center mb-4">
             <div class="col-md-8">
-                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Filtrar por palavra-chave ou FAP...">
+                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Filtrar por palavra-chave, FAP ou Estado...">
             </div>
         </div>
 
         <div class="row" id="editaisContainer">
             
+        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPES" data-texto="nossa bolsa acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do site a= a+ a- acesso à informação | transparência | ouvidoria | administrador | | mapa do...">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <strong>FAPES</strong>
+                    <small class="badge bg-light text-dark">Espírito Santo</small>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-dark fs-6 fw-bold">Nossa Bolsa</h5>
+                    <p class="card-text text-muted small flex-grow-1 mt-2">
+                        Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do...
+                    </p>
+                    <a href="https://fapes.es.gov.br/nossa-bolsa" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                        🔗 Acessar Edital Oficial
+                    </a>
+                </div>
+                <div class="card-footer text-muted small text-end bg-light">
+                    Detectado em: 29/07/2026 02:05
+                </div>
+            </div>
+        </div>
+        
         <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="FAPAC" data-texto="programa de bolsas de iniciação científica programa de bolsas de iniciação científica | fundação de amparo á pesquisa do estado do acre programa de bolsas de iniciação científica – fundação de amparo á pesquisa do estado do acre skip to content premium addons modal box title × modal box content...">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
@@ -42,12 +72,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Programa de Bolsas de Iniciação Científica | Fundação de Amparo á Pesquisa do Estado do AcrE Programa de Bolsas de Iniciação Científica – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to content Premium Addons Modal Box Title × Modal Box Content...
                     </p>
-                    <a href="https://fapac.ac.gov.br/programa-de-bolsas-de-iniciacao-cientifica/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapac.ac.gov.br/programa-de-bolsas-de-iniciacao-cientifica/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -63,12 +93,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         PPSUS – Programa de Pesquisa para o SUS | Fundação de Amparo á Pesquisa do Estado do AcrE PPSUS – Programa de Pesquisa para o SUS – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to...
                     </p>
-                    <a href="https://fapac.ac.gov.br/ppsus-programa-de-pesquisa-para-o-sus/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapac.ac.gov.br/ppsus-programa-de-pesquisa-para-o-sus/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -84,12 +114,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         PEIEX – Programa de Qualificação para Exportação no Acre | Fundação de Amparo á Pesquisa do Estado do AcrE PEIEX – Programa de Qualificação para Exportação no Acre – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to...
                     </p>
-                    <a href="https://fapac.ac.gov.br/peiex-programa-de-qualificacao-para-exportacao-no-acre/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapac.ac.gov.br/peiex-programa-de-qualificacao-para-exportacao-no-acre/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -105,12 +135,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Programa Primeiros Projetos (PPP) | Fundação de Amparo á Pesquisa do Estado do AcrE Programa Primeiros Projetos (PPP) – Fundação de Amparo á Pesquisa do Estado do AcrE Skip to...
                     </p>
-                    <a href="https://fapac.ac.gov.br/topico-5/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapac.ac.gov.br/topico-5/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -126,12 +156,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/pesquisador/programas/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/pesquisador/programas/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -147,12 +177,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/programacaoferias/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/programacaoferias/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -168,12 +198,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Gerência Executiva de Tecnologia da Informação - GETI 2026 © Fundação de Amparo à Pesquisa do Estado de Alagoas. Gerência Executiva de Tecnologia da Informação - GETI 2026 © Fundação de Amparo à Pesquisa do Estado de Alagoas.
                     </p>
-                    <a href="http://faplan2017.fapeal.br/demonstrativo_bolsa/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="http://faplan2017.fapeal.br/demonstrativo_bolsa/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:33
+                    Detectado em: 29/07/2026 01:33
                 </div>
             </div>
         </div>
@@ -189,12 +219,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/2026/06/bolsas-doutorado-alemanha/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/2026/06/bolsas-doutorado-alemanha/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -210,12 +240,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/2026/06/confira-as-novas-turmas/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/2026/06/confira-as-novas-turmas/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -231,12 +261,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/2026/06/pibic-jr-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/2026/06/pibic-jr-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -252,12 +282,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/2026/06/edital-publicar-teses-dissertacoes/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/2026/06/edital-publicar-teses-dissertacoes/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -273,12 +303,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à Pesquisa do Estado de Alagoas A casa do Pesquisador Alagoano FAPEAL – Fundação de Amparo à...
                     </p>
-                    <a href="https://www.fapeal.br/2026/06/edital-centelha-3-al/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapeal.br/2026/06/edital-centelha-3-al/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -294,12 +324,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-uema-no-19-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-uema-no-19-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -315,12 +345,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-no-18-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-no-18-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -336,12 +366,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-emap-no-17-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-emap-no-17-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -357,12 +387,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-emap-no-16-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-emap-no-16-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -378,12 +408,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-saf-n-15-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-saf-n-15-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -399,12 +429,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-fmrb-n-14-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-fmrb-n-14-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -420,12 +450,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-no-13-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-no-13-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -441,12 +471,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-no-12-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-no-12-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -462,12 +492,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL https://www.facebook.com/fapema/ https://twitter.com/fapema_maranhao https://www.instagram.com/fapema_oficial/ https://www.youtube.com/@FAPEMAOFICIAL tema claro/escuro aumentar corpo de texto diminuir corpo de texto https://www.facebook.com/fapema/...
                     </p>
-                    <a href="https://www.fapema.br/edital-fapema-no-11-2026/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.fapema.br/edital-fapema-no-11-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -493,12 +523,12 @@
                 do Governador Ciência, Tecnologia, Inovação e Ensino Superior Comunicação
                 Institucional Controladoria Geral do Estado Cultura...
                     </p>
-                    <a href="https://fapesq.rpp.br/programas/bolsas-de-formacao-capes" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesq.rpp.br/programas/bolsas-de-formacao-capes" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -514,12 +544,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1369 0 R/ViewerPreferences 1370 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x�� Ms����� Ɏ a��I&3�-��4�+�!�!� �T�J�����C�F� 2�LOi/=u���b�d-��طo�������by�O>���x�_��+WɷGg��? ���...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/2026.07.01-Desafios-Digitais-1.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/2026.07.01-Desafios-Digitais-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -535,12 +565,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1211 0 R/ViewerPreferences 1212 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��<�r丕����ɑ�(�I����[�^j��C�YJJN�2SŤm��f�>t�#���O��3 �T{F%,o ��...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/2026.07.15-Global-PE-Espanha-Ajustado.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/2026.07.15-Global-PE-Espanha-Ajustado.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -556,12 +586,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.4 %���� 1 0 obj <> endobj 3 0 obj <> endobj 11 0 obj <> endobj 13 0 obj <> stream x����J�`��Ԃ(�� 28�h��mRpi#�V!�S�� �IHS�tspu+.ހ�e(��%���| �:t����� �� � @V�� G�zM��<���$*�xÐ�!��K�����c��z�G��� ��>�&|)�4c�Ƃ��� � �ٛbw��0�o�Π?�һY���M�֩УO� > stream x��� p\�}����H��H� rfl���}_}���c@�T[�eK�%���vkוJ����Mv��\�}��~�$��q���-W"ْi��v�����+�L� �H�3��C9 9��� �ֽ �...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/Errata-15_07_2026.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/Errata-15_07_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -577,12 +607,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1280 0 R/ViewerPreferences 1281 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��\Ko��� �����P�f7�L����U�� IA��@i(i��x �&?-��9�ol� �䲧TU?ș!� ��=&�Q]��������:�Zx/_ .��m>�>...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/PROFIX_20_2026.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/PROFIX_20_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -598,12 +628,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1669 0 R/ViewerPreferences 1670 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x�� Msܶ��� w;E� v2��嵻��qm5����ZK)�zwe�J����C��[ 2�LNi.=�AXI( �%�� �7xxTmg��m��g�G�����r �9 FC Bh...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/2026.06.07-Espaços-CRIA-1.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/2026.06.07-Espaços-CRIA-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -619,12 +649,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 554 0 R/ViewerPreferences 555 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��Mo���.@�a�d��8��W�e9�[j��@� VZZ^û+sW�۟�S�9�@E�...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/Edital_FACEPE_SNCT-2026.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/Edital_FACEPE_SNCT-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -640,12 +670,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1276 0 R/ViewerPreferences 1277 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/Annots[ 23 0 R] /MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��=Ms�Ʊ�����#�!�0x�r�~h ���}^����@��L�(������ �_������S^.���{f���h��...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/05/2026.05.27-Compet-Médio.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/05/2026.05.27-Compet-Médio.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -661,12 +691,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.4 %���� 1 0 obj < /Producer (Skia/PDF m150 Google Docs Renderer)>> endobj 3 0 obj <> endobj 4 0 obj <> endobj 9 0 obj <> stream x����J�`��Ԃ(�� 28�h��mRpi#�V!�S�� �IHS�tspu+.ހ�e(��%���| �:t����� �� � @V�� G�zM��<���$*�xÐ�!��K�����c��z�G��� ��>�&|)�4c�Ƃ��� � �ٛbw��0�o�Π?�һY���M�֩УO� > stream �����JFIF���������C�      $.' ",# (7),01444 '9=82<.342���C...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/05/Edital-FACEPE-16-2026-APQ-Mães-Cientistas-Pernambucanas_FINAL.docx-1.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/05/Edital-FACEPE-16-2026-APQ-Mães-Cientistas-Pernambucanas_FINAL.docx-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -682,12 +712,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.4 %���� 1 0 obj < /Producer (Skia/PDF m151 Google Docs Renderer)>> endobj 3 0 obj <> endobj 10 0 obj <> stream x����J�`��Ԃ(�� 28�h��mRpi#�V!�S�� �IHS�tspu+.ހ�e(��%���| �:t����� �� � @V�� G�zM��<���$*�xÐ�!��K�����c��z�G��� ��>�&|)�4c�Ƃ��� � �ٛbw��0�o�Π?�һY���M�֩УO� > stream x��� p\�}����H��H� rfl���}_}���c@�T[�eK�%���vkוJ����Mv��\�}��~�$��q���-W"ْi��v�����+�L�...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/Errata_Edital_Maes.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/06/Errata_Edital_Maes.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:34
+                    Detectado em: 29/07/2026 01:34
                 </div>
             </div>
         </div>
@@ -703,12 +733,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.5 %���� 844 0 obj <> endobj 862 0 obj <>/Filter/FlateDecode/ID[ ]/Index[844 40]/Info 843 0 R/Length 97/Prev 530545/Root 845 0 R/Size 884/Type/XRef/W[1 3 1]>>stream h�bbd```b``n���`��d���Iv0�&�@$K7�< �"�S@�zX| �d�_bG�I�3 �w�6#�m�8� �����y `��'N endstream endobj startxref 0 %%EOF 883 0 obj <>stream h�b```� �E B  cb� L1&�� �'(���c��PӘ����8C�*A��3�d���ˌ�...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/Edital-15-2026-FACEPE-FAPESP-Final-1.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/Edital-15-2026-FACEPE-FAPESP-Final-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:35
+                    Detectado em: 29/07/2026 01:35
                 </div>
             </div>
         </div>
@@ -724,12 +754,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1235 0 R/ViewerPreferences 1236 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��]Ks�F��+B��� D=�" ��d�ˉ���8�� Zl�n��M�A�����5������iw/{���z5�"E� ��F���������]��X���W_ ?����O�:���lw��㳿_�ǯW���U��]...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/04/2026.04.28-Compet-Superior.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/04/2026.04.28-Compet-Superior.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:35
+                    Detectado em: 29/07/2026 01:35
                 </div>
             </div>
         </div>
@@ -745,12 +775,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 4 0 obj (Identity) endobj 5 0 obj (Adobe) endobj 8 0 obj << /Filter /FlateDecode /Length 19926 /Length1 52624 /Type /Stream >> stream x�� |E�����If���I�aH� A&� GBr ��drhB� *@��z�'���C � �����* ���������I��������j����WU�U}�ի����� �;� �k��=�����%�S��ǿ�>��^P��� �� �ق�JKsf��-�$ @w �bwMsu���.�?幚E �c�tMhCy�ou��ͳ� ���x�t}���A��`}���%u��{�5�j�/~...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/Prorrogação-de-submissão-do-Edital-14.2026-COMPET-Superior-1.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/07/Prorrogação-de-submissão-do-Edital-14.2026-COMPET-Superior-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:35
+                    Detectado em: 29/07/2026 01:35
                 </div>
             </div>
         </div>
@@ -766,12 +796,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.5 %���� 1076 0 obj <> endobj 1100 0 obj <>/Filter/FlateDecode/ID[<9B1A0B335219E3517037BA24F55F2B4E> ]/Index[1076 43]/Info 1075 0 R/Length 121/Prev 445952/Root 1077 0 R/Size 1119/Type/XRef/W[1 3 1]>>stream h�bbd```b``� "'�H&^ɺ̞f��H+�Jw0{)�] f�U��9�Adt,�d���"�W�D �@�R=������� RnH�-��r��� L� ,�A"@ѐ��������g q endstream endobj startxref 0 %%EOF 1118 0 obj <>stream h�b```�� �...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/03/Edital-12-2026-BFP_2026-03-30FNAL-1.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/03/Edital-12-2026-BFP_2026-03-30FNAL-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:35
+                    Detectado em: 29/07/2026 01:35
                 </div>
             </div>
         </div>
@@ -787,12 +817,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         %PDF-1.7 %���� 1 0 obj <>/Metadata 1026 0 R/ViewerPreferences 1027 0 R>> endobj 2 0 obj <> endobj 3 0 obj <>/ExtGState<>/XObject<>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<>/Tabs/S/StructParents 0>> endobj 4 0 obj <> stream x��=�r�Ƒ������� A�@!B��yj鐥���=�|��A�w�l �i�?m�ƒ�Q�O�.>mf��n9 ���GV�3+���Yۯ���>�쳣g}_���Y%�N�W::�߫��M}�����������...
                     </p>
-                    <a href="https://www.facepe.br/wp-content/uploads/2026/04/2026.04.06_Global_PE_UK.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.facepe.br/wp-content/uploads/2026/04/2026.04.06_Global_PE_UK.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:35
+                    Detectado em: 29/07/2026 01:35
                 </div>
             </div>
         </div>
@@ -824,12 +854,12 @@
 ���j�9����������f7�IMj�S�2�`��X���$��m+��*g
 ���(�Z��.����X�����Fj-[h�s��"���鼫*��Re7[�P��u�m��!���y��UT����^���ᵶ�jWq�...
                     </p>
-                    <a href="https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/88395/pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://legisla.casacivil.go.gov.br/api/v2/pesquisa/legislacoes/88395/pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -845,12 +875,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Institucional Carta de Serviços Acesso Rápido A Fundação Diretoria Conselho Superior Integrantes Consup Regimento Consup Atas de reuniões Missão,Visão e Valores Legislação Reorganização da Estrutura Administrativa da Fapeg Lei de Criação Alteração da Lei n°16.690 Lei de bolsas Lei de inovação Organização Administrativa Estatutos Decreto Nº 10.322, 19 de Setembro de 2023. Estatuto da Fapeg Decreto...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/acoes/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/acoes/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -866,12 +896,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Institucional Carta de Serviços Acesso Rápido A Fundação Diretoria Conselho Superior Integrantes Consup Regimento Consup Atas de reuniões Missão,Visão e Valores Legislação Reorganização da Estrutura Administrativa da Fapeg Lei de Criação Alteração da Lei n°16.690 Lei de bolsas Lei de inovação Organização Administrativa Estatutos Decreto Nº 10.322, 19 de Setembro de 2023. Estatuto da Fapeg Decreto...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/pesquisador/duvidas-frequentes/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/pesquisador/duvidas-frequentes/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -887,12 +917,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Institucional Carta de Serviços Acesso Rápido A Fundação Diretoria Conselho Superior Integrantes Consup Regimento Consup Atas de reuniões Missão,Visão e Valores Legislação Reorganização da Estrutura Administrativa da Fapeg Lei de Criação Alteração da Lei n°16.690 Lei de bolsas Lei de inovação Organização Administrativa Estatutos Decreto Nº 10.322, 19 de Setembro de 2023. Estatuto da Fapeg Decreto...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/pesquisador/duvidas-frequentes-auxilios/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/pesquisador/duvidas-frequentes-auxilios/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -908,12 +938,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-formacao-fapeg" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-formacao-fapeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -929,12 +959,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-pesquisa-e-desenvolvimento-no-pais-fapeg" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-pesquisa-e-desenvolvimento-no-pais-fapeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -950,12 +980,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-pesquisa-e-desenvolvimento-no-exterior-fapeg" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-pesquisa-e-desenvolvimento-no-exterior-fapeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -971,12 +1001,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://www.go.gov.br/servicos/servico/requerer-auxilio-a-inovacao-fapeg" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.go.gov.br/servicos/servico/requerer-auxilio-a-inovacao-fapeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -992,12 +1022,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-fomento-tecnologico-e-extensao-inovadora-fapeg" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.go.gov.br/servicos/servico/requerer-bolsa-de-fomento-tecnologico-e-extensao-inovadora-fapeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -1013,12 +1043,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://www.go.gov.br/servicos/servico/requerer-auxilio-a-participacao-em-evento-de-ct-i-fapeg" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://www.go.gov.br/servicos/servico/requerer-auxilio-a-participacao-em-evento-de-ct-i-fapeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -1034,12 +1064,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/divulgado-resultado-final-do-edital-de-fomento-a-rede-goiana-de-laboratorios-de-inovacao-2a-chamada/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/divulgado-resultado-final-do-edital-de-fomento-a-rede-goiana-de-laboratorios-de-inovacao-2a-chamada/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:36
+                    Detectado em: 29/07/2026 01:36
                 </div>
             </div>
         </div>
@@ -1055,12 +1085,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/divulgado-resultado-de-edital-que-levara-70-pesquisadores-goianos-a-eventos-cientificos-no-exterior/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/divulgado-resultado-de-edital-que-levara-70-pesquisadores-goianos-a-eventos-cientificos-no-exterior/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1076,12 +1106,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/prorrogado-prazo-para-submissao-de-propostas-ao-edital-de-conservacao-da-biodiversidade-legado-verdes-do-cerrado/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/prorrogado-prazo-para-submissao-de-propostas-ao-edital-de-conservacao-da-biodiversidade-legado-verdes-do-cerrado/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1097,12 +1127,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Governo Administração Direta Autarquias e Fundações Empresas Públicas SIGA - Sistema de Gestão Administrativa Conheça Goiás Turismo História Geografia Cultura Economia Municípios Símbolos Estaduais Notícias Legislação Governança Portal da Transparência Dados Abertos e-SIC Ouvidoria Denúncias contra Corrupção LGPD Radar da Transparência Código de Ética PCP SIGA Diário Oficial Acesso à Informação...
                     </p>
-                    <a href="https://goias.gov.br/fapeg/prazo-para-inscricao-no-edital-de-conservacao-da-biodiversidade-legado-verdes-do-cerrado-termina-no-proximo-dia-23/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://goias.gov.br/fapeg/prazo-para-inscricao-no-edital-de-conservacao-da-biodiversidade-legado-verdes-do-cerrado-termina-no-proximo-dia-23/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1118,12 +1148,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/chamadas" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/chamadas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1139,12 +1169,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/programas-estrategicos" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/programas-estrategicos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1160,12 +1190,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/chamamento-publico" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/chamamento-publico" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1181,12 +1211,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/chamadas-internacionais" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/chamadas-internacionais" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1202,12 +1232,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/editais-em-julgamento-chamadas-internacionais-2" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/editais-em-julgamento-chamadas-internacionais-2" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1223,12 +1253,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/editais" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/editais" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1244,12 +1274,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência | Ouvidoria | Administrador | | Mapa do Site A= A+ A- Acesso à Informação | Transparência |...
                     </p>
-                    <a href="https://fapes.es.gov.br/termo-de-fomento-colaboracao-cooperacao" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapes.es.gov.br/termo-de-fomento-colaboracao-cooperacao" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1265,12 +1295,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Início Receitas e Orçamentos Leis Orçamentárias Plano Plurianual (PPA) Plano Plurianual (PPA) O Plano Plurianual (PPA) define as prioridades do Governo por um período de quatro anos. Início Receitas e Orçamentos Leis Orçamentárias Plano Plurianual (PPA) Plano Plurianual (PPA) O Plano Plurianual (PPA) define as prioridades do Governo por um período de quatro anos. Início Receitas e Orçamentos Leis...
                     </p>
-                    <a href="https://transparencia.es.gov.br/Orcamento/PPA" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://transparencia.es.gov.br/Orcamento/PPA" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1286,12 +1316,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Para cumprir seus objetivos, a FAPEMIG apoia a pesquisa e a inovação científica e tecnológica a partir da concessão de apoio e recursos financeiros, tais como Auxílios e Bolsas . As diversas modalidades de fomento e seus programas específicos são apresentados no Caderno de Modalidade de Fomentos . Auxílios Aporte de recursos financeiros, em benefício de pesquisador, diretamente ou por meio de...
                     </p>
-                    <a href="https://fapemig.br/auxilios-e-bolsas" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapemig.br/auxilios-e-bolsas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1307,12 +1337,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores
                     </p>
-                    <a href="https://fapemig.br/oportunidades/chamadas-e-editais?status=aberta" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapemig.br/oportunidades/chamadas-e-editais?status=aberta" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1328,12 +1358,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         A FAPEMIG estimula o desenvolvimento científico, tecnológico e de inovação por meio de diversas modalidades de apoio, que podem ser divididas em quatro grandes grupos: Pesquisa, Capacitação de Pessoas, Inovação e Divulgação Científica. As modalidades de fomento disponíveis são apresentadas no Caderno de Modalidade de Fomentos . As propostas para solicitação de financiamento dentro das modalidades...
                     </p>
-                    <a href="https://fapemig.br/auxilios-e-bolsas/linhas-de-fomento" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapemig.br/auxilios-e-bolsas/linhas-de-fomento" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1349,12 +1379,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         A FAPEMIG oferece diferentes formas de apoio financeiro para fomentar a ciência, a tecnologia e a inovação em Minas Gerais. Esta seção apresenta os valores atualizados referentes às bolsas, auxílios, diárias e demais modalidades de fomento disponibilizadas pela Fundação. As informações são atualizadas conforme as diretrizes institucionais e estão disponíveis para consulta, auxiliando...
                     </p>
-                    <a href="https://fapemig.br/auxilios-e-bolsas/valores-de-auxilios-e-bolsas" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapemig.br/auxilios-e-bolsas/valores-de-auxilios-e-bolsas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1370,12 +1400,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Filtros Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores Todos Ambiente de Inovação Empresas Governo ICT Pesquisadores
                     </p>
-                    <a href="https://fapemig.br/oportunidades/chamadas-e-editais" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapemig.br/oportunidades/chamadas-e-editais" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1391,12 +1421,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/programas-estrategicos" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/programas-estrategicos" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1412,12 +1442,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/programas" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/programas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1433,12 +1463,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/chamadas/ " target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/chamadas/ " target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1454,12 +1484,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/avaliacao" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/avaliacao" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1475,12 +1505,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP | Fundo de Amparo à Pesquisa do Estado de São Paulo Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP |...
                     </p>
-                    <a href="https://fapesp.br/oportunidades" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/oportunidades" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1496,12 +1526,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/6" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/6" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1517,12 +1547,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/integridade" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/integridade" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1538,12 +1568,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/chamadas" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/chamadas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1559,12 +1589,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fomento.fapesp.br/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fomento.fapesp.br/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1580,12 +1610,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/bco" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/bco" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:37
+                    Detectado em: 29/07/2026 01:37
                 </div>
             </div>
         </div>
@@ -1601,12 +1631,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/chamadas-html" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/chamadas-html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1622,12 +1652,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP | Fundo de Amparo à Pesquisa do Estado de São Paulo Início Oportunidades abertas Oportunidades encerradas Home Open opportunities Closed opportunities English Português Oportunidades de Bolsas Fellowship Opportunities FAPESP |...
                     </p>
-                    <a href="http://fapesp.br/oportunidades/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="http://fapesp.br/oportunidades/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1643,12 +1673,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/381" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/381" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1664,12 +1694,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/2185/chamadas-de-propostas-2026" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/2185/chamadas-de-propostas-2026" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1685,12 +1715,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         Resumo não disponível.
                     </p>
-                    <a href="https://fapesp.br/18243" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesp.br/18243" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1706,12 +1736,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         CHAMADAS ABERTAS CHAMADAS EM ANDAMENTO DIVULGAÇÃO DE RESULTADOS CHAMADAS ENCERRADAS COMUNICADOS FAPESC Todas chamadas abertas Chamadas abertas Chamadas publicas EDITAL DE CHAMADA PÚBLICA FAPESC/SEF N.º 48/2026 PROGRAMAS SEF DE PESQUISA, DESENVOLVIMENTO E INOVAÇÃO 28/07/2026 Chamadas abertas Chamadas publicas EDITAL DE CHAMADA PÚBLICA FAPESC/SSP N.º 47/2026 PROGRAMA DE PESQUISA APLICADA,...
                     </p>
-                    <a href="https://fapesc.sc.gov.br/chamadas-abertas/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesc.sc.gov.br/chamadas-abertas/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1727,12 +1757,12 @@
                     <p class="card-text text-muted small flex-grow-1 mt-2">
                         CHAMADAS EM ANDAMENTO CHAMADAS ABERTAS DIVULGAÇÃO DE RESULTADOS CHAMADAS ENCERRADAS COMUNICADOS FAPESC Todas chamadas em andamento Chamadas em andamento EDITAL DE CHAMADA PÚBLICA FAPESC N.º 38/2026 PROGRAMA ECONOMIA AZUL: DESENVOLVIMENTO TECNOLÓGICO E RESILIÊNCIA DA AQUICULTURA EM SANTA CATARINA 26/06/2026 Chamadas em andamento Chamadas publicas EDITAL DE CHAMADA PÚBLICA FAPESC N.º 36/2026...
                     </p>
-                    <a href="https://fapesc.sc.gov.br/chamadas-em-andamento/" target="_blank" class="btn btn-outline-primary btn-sm mt-3 w-100">
+                    <a href="https://fapesc.sc.gov.br/chamadas-em-andamento/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-3 w-100">
                         🔗 Acessar Edital Oficial
                     </a>
                 </div>
                 <div class="card-footer text-muted small text-end bg-light">
-                    Coletado em: 29/07/2026 01:38
+                    Detectado em: 29/07/2026 01:38
                 </div>
             </div>
         </div>
@@ -1740,8 +1770,11 @@
         </div>
     </div>
 
-    <footer class="text-center py-3 text-muted border-top bg-white">
-        <small>Atualizado automaticamente pelo GitHub Actions.</small>
+    <footer class="text-center py-4 text-muted border-top bg-white">
+        <div class="container">
+            <p class="mb-1 small">Projeto mantido de forma automática e independente.</p>
+            <p class="mb-0 extra-small opacity-75">Respeitamos a privacidade e a LGPD. Não coletamos dados pessoais sem consentimento explícito.</p>
+        </div>
     </footer>
 
     <script>
