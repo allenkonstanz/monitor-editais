@@ -1,0 +1,36 @@
+name: Executar Monitor de Editais Semanalmente
+
+on:
+  schedule:
+    # Agendado para rodar todo domingo às 08:00 UTC (05:00 no horário de Brasília)
+    - cron: '0 8 * * 0'
+  workflow_dispatch: # Permite que você clique em um botão e rode manualmente quando quiser
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar ambiente Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Executar o Bot
+        run: python bot.py
+
+      - name: Salvar alterações no GitHub (HTML e JSON de histórico)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add index.html editais_vistos.json
+          git commit -m "Atualização semanal do painel de editais" || exit 0
+          git push
