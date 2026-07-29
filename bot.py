@@ -3,7 +3,7 @@ import concurrent.futures
 import hashlib
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
 from urllib.parse import urljoin
@@ -96,7 +96,7 @@ def extrair_resumo(url: str, max_chars: int = 350) -> str:
         # Lê o conteúdo HTML
         soup = BeautifulSoup(resp.text, "lxml")
 
-        # Se o texto baixado começar com a assinatura de arquivo PDF (caso o Content-Type venha errado)
+        # Se o texto baixado começar com a assinatura de arquivo PDF
         if resp.text.startswith("%PDF"):
             return "Edital em formato PDF. Acesse o link oficial abaixo para visualizar o documento completo."
 
@@ -126,6 +126,16 @@ def extrair_resumo(url: str, max_chars: int = 350) -> str:
 def contem_palavras_ignoradas(texto: str) -> bool:
     texto_lower = texto.lower()
     return any(palavra.lower() in texto_lower for palavra in PALAVRAS_IGNORADAS)
+
+
+def edital_expirado(detectado_em_str: str) -> bool:
+    """Verifica se o edital ultrapassou o limite de dias configurado em MAX_EDITAL_AGE_DAYS."""
+    try:
+        data_edital = datetime.strptime(detectado_em_str, "%d/%m/%Y %H:%M")
+        limite_dias = timedelta(days=MAX_EDITAL_AGE_DAYS)
+        return (datetime.now() - data_edital) > limite_dias
+    except Exception:
+        return False
 
 
 def parser_generic(
@@ -165,7 +175,7 @@ def parser_generic(
                 "estado": estado,
             })
 
-    return editais[:10]  # Limita a 10 links por FAP para agilidade
+    return editais[:10]  # Limita a 10 links por FAP
 
 
 def processar_fap(fap: dict, historico_ids: set) -> List[Dict]:
@@ -192,7 +202,6 @@ def processar_fap(fap: dict, historico_ids: set) -> List[Dict]:
             historico_ids.add(eid)
             continue
 
-        # Baixa o resumo apenas para itens realmente novos
         resumo = extrair_resumo(ed["link"])
         if contem_palavras_ignoradas(resumo):
             historico_ids.add(eid)
@@ -213,12 +222,13 @@ def gerar_pagina_html(editais: List[Dict]):
 
     cards_html = ""
     for ed in editais:
+        # Removido o nome da instituição no header, mostrando apenas a localização/estado
         cards_html += f"""
-        <div class="col-md-6 col-lg-4 mb-4 edital-card" data-fonte="{ed['fonte']}" data-texto="{ed['titulo'].lower()} {ed.get('resumo', '').lower()}">
+        <div class="col-md-6 col-lg-4 mb-4 edital-card lazy-card" data-fonte="{ed.get('estado', '')}" data-texto="{ed['titulo'].lower()} {ed.get('resumo', '').lower()}">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <strong>{ed['fonte']}</strong>
-                    <small class="badge bg-light text-dark">{ed.get('estado', '')}</small>
+                    <span class="badge bg-light text-dark fw-bold">📍 {ed.get('estado', 'BR')}</span>
+                    <small class="opacity-75">Oportunidade</small>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-dark fs-6 fw-bold">{ed['titulo']}</h5>
@@ -249,6 +259,17 @@ def gerar_pagina_html(editais: List[Dict]):
         .card {{ transition: transform 0.2s, box-shadow 0.2s; border-radius: 8px; }}
         .card:hover {{ transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important; }}
         .disclaimer-box {{ background-color: #fff3cd; border-left: 5px solid #ffc107; color: #856404; font-size: 0.9rem; padding: 1rem; border-radius: 4px; }}
+        
+        /* Efeito de Lazy Loading com Animação Suave */
+        .lazy-card {{
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+        }}
+        .lazy-card.loaded {{
+            opacity: 1;
+            transform: translateY(0);
+        }}
     </style>
 </head>
 <body>
@@ -257,7 +278,7 @@ def gerar_pagina_html(editais: List[Dict]):
         <div class="container">
             <h1 class="fw-bold">📢 Monitor de Editais FAPs</h1>
             <p class="mb-1">Plataforma independente de agregação e acompanhamento de oportunidades</p>
-            <small class="opacity-75">Última checagem: {agora_str} | Total de editais monitorados: <strong>{len(editais)}</strong></small>
+            <small class="opacity-75">Última checagem: {agora_str} | Total de editais ativos: <strong>{len(editais)}</strong></small>
         </div>
     </div>
 
@@ -272,12 +293,12 @@ def gerar_pagina_html(editais: List[Dict]):
 
         <div class="row justify-content-center mb-4">
             <div class="col-md-8">
-                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Filtrar por palavra-chave, FAP ou Estado...">
+                <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm" placeholder="🔍 Filtrar por palavra-chave ou Estado...">
             </div>
         </div>
 
         <div class="row" id="editaisContainer">
-            {cards_html if cards_html else '<div class="col-12 text-center text-muted py-5"><h4>Nenhum edital encontrado no momento.</h4></div>'}
+            {cards_html if cards_html else '<div class="col-12 text-center text-muted py-5"><h4>Nenhum edital recente encontrado no momento.</h4></div>'}
         </div>
     </div>
 
@@ -289,6 +310,7 @@ def gerar_pagina_html(editais: List[Dict]):
     </footer>
 
     <script>
+        // Script de Busca em Tempo Real
         document.getElementById('searchInput').addEventListener('keyup', function() {{
             let filter = this.value.toLowerCase();
             let cards = document.querySelectorAll('.edital-card');
@@ -302,6 +324,20 @@ def gerar_pagina_html(editais: List[Dict]):
                     card.style.display = 'none';
                 }}
             }});
+        }});
+
+        // Script para Lazy Loading ao Rolar a Página (Intersection Observer)
+        document.addEventListener("DOMContentLoaded", function() {{
+            const observer = new IntersectionObserver((entries, obs) => {{
+                entries.forEach(entry => {{
+                    if (entry.isIntersecting) {{
+                        entry.target.classList.add('loaded');
+                        obs.unobserve(entry.target);
+                    }}
+                }});
+            }}, {{ rootMargin: "0px 0px 100px 0px" }});
+
+            document.querySelectorAll('.lazy-card').forEach(card => observer.observe(card));
         }});
     </script>
 </body>
@@ -321,7 +357,7 @@ def executar_monitoramento():
 
     novos_editais = []
 
-    # Executa até 8 FAPs simultaneamente para evitar concorrência abusiva e acelerar o tempo
+    # Executa as buscas simultaneamente
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         futures = [
             executor.submit(processar_fap, fap, historico_ids) for fap in FAPS
@@ -331,9 +367,21 @@ def executar_monitoramento():
             if res:
                 novos_editais.extend(res)
 
-    editais_finais = novos_editais + editais_salvos
-    salvar_dados({"ids": list(historico_ids), "editais": editais_finais})
-    gerar_pagina_html(editais_finais)
+    # Une os novos editais com os antigos salvos
+    editais_totais = novos_editais + editais_salvos
+
+    # Ocultação/Limpeza Automática: Mantém apenas os editais que NÃO expiraram
+    editais_validos = []
+    for ed in editais_totais:
+        detectado = ed.get("detectado_em", "")
+        if detectado and not edital_expirado(detectado):
+            editais_validos.append(ed)
+
+    # Atualiza o arquivo de dados salvos
+    salvar_dados({"ids": list(historico_ids), "editais": editais_validos})
+    
+    # Gerar a página final HTML apenas com editais ativos
+    gerar_pagina_html(editais_validos)
 
 
 if __name__ == "__main__":
